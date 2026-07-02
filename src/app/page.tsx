@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
+import React, { Suspense } from "react";
 
-const HeroSection5 = dynamic(() => import("@/components/home/HeroSection5"));
-const ServicesSection = dynamic(() => import("@/components/home/ServicesSection"));
-const ProjectsSection = dynamic(() => import("@/components/home/ProjectsSection"));
-const StatsSection = dynamic(() => import("@/components/home/StatsSection"));
-const PricingSection = dynamic(() => import("@/components/home/PricingSection"));
+import HeroSection5 from "@/components/home/HeroSection5";
+import ServicesSection from "@/components/home/ServicesSection";
+import StatsSection from "@/components/home/StatsSection";
+import PricingSection from "@/components/home/PricingSection";
 
 export const metadata: Metadata = {
   title: "Hardik Yadav — Software Engineer & Visionary Builder",
@@ -15,12 +14,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="bg-black min-h-screen text-white">
+    <main className="bg-black min-h-screen text-white overflow-hidden">
       <HeroSection5 />
       <StatsSection />
       <ServicesSection />
-      <ProjectsSection />
       <PricingSection />
-    </div>
+    </main>
   );
 }
