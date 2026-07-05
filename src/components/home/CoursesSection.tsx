@@ -60,7 +60,7 @@ export default function CoursesSection() {
                   <div className="text-gray-600 text-xs">one-time</div>
                 </div>
                 <a
-                  href="mailto:hardik@example.com?subject=Course Enquiry"
+                  href="mailto:hardikyadaven@gmail.com?subject=Course Enquiry"
                   className={`px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r ${c.color} opacity-90 hover:opacity-100 transition-all group-hover:scale-105`}
                 >
                   Enroll Now
@@ -75,7 +75,7 @@ export default function CoursesSection() {
           <h4 className="text-white font-bold text-lg mb-2">🔥 Bundle & Save</h4>
           <p className="text-gray-400 text-sm mb-4">Enroll in 2+ courses together and get up to 20% off. Custom learning paths also available for teams and companies.</p>
           <a
-            href="mailto:hardik@example.com?subject=Bundle Course"
+            href="mailto:hardikyadaven@gmail.com?subject=Bundle Course"
             className="inline-block px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-yellow-500 to-orange-500 text-black hover:opacity-90 transition-all"
           >
             Contact for Bundle Pricing

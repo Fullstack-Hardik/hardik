@@ -108,7 +108,7 @@ export default function TopCoursesSection() {
                   {c.price}
                 </div>
                 <a
-                  href="mailto:hardik@example.com?subject=Course Enquiry"
+                  href="mailto:hardikyadaven@gmail.com?subject=Course Enquiry"
                   className={`px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r ${c.color} opacity-90 hover:opacity-100 transition-all group-hover:scale-105`}
                 >
                   Enroll
