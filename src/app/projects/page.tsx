@@ -5,15 +5,6 @@ import { FeaturedSpotlight } from "@/components/ui/feature-spotlight";
 
 const projects = [
   {
-    title1: "AI SaaS",
-    title2: "Document Analyzer",
-    description: "Upload any document and get instant AI-powered summaries, key insights, and Q&A. Built with Next.js + OpenAI GPT-4o.",
-    imageSrc: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80",
-    linkTo: "#",
-    index: "01",
-    label: "AI / SaaS"
-  },
-  {
     title1: "E-Commerce",
     title2: "Admin Dashboard",
     description: "Full-stack admin panel with real-time analytics, inventory management, order tracking and custom reporting.",
@@ -57,6 +48,15 @@ const projects = [
     linkTo: "#",
     index: "06",
     label: "SaaS"
+  },
+  {
+    title1: "Marshi",
+    title2: "Collection",
+    description: "E-commerce website for a premium clothing brand featuring ladies, gents, and kids apparel with a modern UI.",
+    imageSrc: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1200&q=80",
+    linkTo: "https://marshicollection.vercel.app",
+    index: "07",
+    label: "E-Commerce"
   }
 ];
 

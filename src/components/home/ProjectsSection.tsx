@@ -21,6 +21,12 @@ const projects = [
     designation: "Enterprise Web Systems",
     src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1000&q=60&auto=format,compress&fit=crop",
   },
+  {
+    quote: "Built a premium e-commerce platform for a fashion brand, featuring dynamic product displays and a seamless shopping experience.",
+    name: "Marshi Collection",
+    designation: "E-Commerce / Fashion",
+    src: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1000&q=60&auto=format,compress&fit=crop",
+  }
 ];
 
 export default function ProjectsSection() {
