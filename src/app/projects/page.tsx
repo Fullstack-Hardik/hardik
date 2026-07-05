@@ -5,57 +5,12 @@ import { FeaturedSpotlight } from "@/components/ui/feature-spotlight";
 
 const projects = [
   {
-    title1: "E-Commerce",
-    title2: "Admin Dashboard",
-    description: "Full-stack admin panel with real-time analytics, inventory management, order tracking and custom reporting.",
-    imageSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
-    linkTo: "#",
-    index: "02",
-    label: "Full-Stack"
-  },
-  {
-    title1: "DevChat",
-    title2: "AI Code Assistant",
-    description: "VS Code-style AI coding assistant with context-aware completions, code explanation, and refactoring suggestions.",
-    imageSrc: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80",
-    linkTo: "#",
-    index: "03",
-    label: "AI / Dev Tools"
-  },
-  {
-    title1: "Gym Management",
-    title2: "System",
-    description: "Complete gym management platform with member tracking, attendance, billing, and workout planning.",
-    imageSrc: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80",
-    linkTo: "#",
-    index: "04",
-    label: "Full-Stack"
-  },
-  {
-    title1: "Portfolio",
-    title2: "Generator AI",
-    description: "Enter your details and AI generates a beautiful, SEO-optimized portfolio website in seconds.",
-    imageSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
-    linkTo: "#",
-    index: "05",
-    label: "AI / Tools"
-  },
-  {
-    title1: "Restaurant",
-    title2: "QR Menu System",
-    description: "Digital menu with QR code ordering, real-time kitchen display, payment integration and analytics.",
-    imageSrc: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80",
-    linkTo: "#",
-    index: "06",
-    label: "SaaS"
-  },
-  {
     title1: "Marshi",
     title2: "Collection",
     description: "E-commerce website for a premium clothing brand featuring ladies, gents, and kids apparel with a modern UI.",
     imageSrc: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1200&q=80",
     linkTo: "https://marshicollection.vercel.app",
-    index: "07",
+    index: "01",
     label: "E-Commerce"
   }
 ];

@@ -4,24 +4,6 @@ import { AnimatedContainer } from "@/components/ui/animated-container";
 
 const projects = [
   {
-    quote: "Architected a cross-platform mobile application for service booking, integrating real-time tracking and automated scheduling.",
-    name: "Vertex App Forge",
-    designation: "Custom App Solutions",
-    src: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1000&q=60&auto=format,compress&fit=crop",
-  },
-  {
-    quote: "Managed a full-scale digital transformation and brand activation for a major hospitality group, reaching 1M+ organic impressions.",
-    name: "Vertex Marketing",
-    designation: "Strategic Growth",
-    src: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1000&q=60&auto=format,compress&fit=crop",
-  },
-  {
-    quote: "Successfully developed a high-frequency recruitment portal that streamlined candidate onboarding for global talent acquisition groups.",
-    name: "Vertex Web Core",
-    designation: "Enterprise Web Systems",
-    src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1000&q=60&auto=format,compress&fit=crop",
-  },
-  {
     quote: "Built a premium e-commerce platform for a fashion brand, featuring dynamic product displays and a seamless shopping experience.",
     name: "Marshi Collection",
     designation: "E-Commerce / Fashion",
