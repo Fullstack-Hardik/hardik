@@ -4,11 +4,29 @@ import { AnimatedContainer } from "@/components/ui/animated-container";
 
 const projects = [
   {
-    quote: "Built a premium e-commerce platform for a fashion brand, featuring dynamic product displays and a seamless shopping experience.",
-    name: "Marshi Collection",
-    designation: "E-Commerce / Fashion",
-    src: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1000&q=60&auto=format,compress&fit=crop",
-  }
+    quote: "Company website for Vertex Innovations for event management and admin post hirings. Beautifully designed using Vite, Next.js, Tailwind, MongoDB, and Express.",
+    name: "Vertexiae",
+    designation: "Event & HR Platform",
+    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80",
+  },
+  {
+    quote: "Platform for assigning tasks, where users can complete and share them. Built with React, Tailwind, MongoDB, Express, Cloudinary, and Brevo for OTP.",
+    name: "EarnetixHub",
+    designation: "Task Management",
+    src: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&q=80",
+  },
+  {
+    quote: "The main portal for Earnetix updates, comprehensive blogs, and company details.",
+    name: "Earnetix",
+    designation: "Updates & Blogs",
+    src: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80",
+  },
+  {
+    quote: "Rich, SEO-friendly single-page agency website showcasing 360 virtual tours and web development services using 3D iframes.",
+    name: "GarryDigital360",
+    designation: "Virtual Tours",
+    src: "https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=1200&q=80",
+  },
 ];
 
 export default function ProjectsSection() {
