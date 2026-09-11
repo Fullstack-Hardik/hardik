@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 
 import ClickSpark from '@/components/ui/ClickSpark';
@@ -114,6 +115,26 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-black text-white antialiased overflow-x-hidden">
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FJLWTZ7RH9"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FJLWTZ7RH9');
+          `}
+        </Script>
+
+        {/* SecurePrivacy Cookie Consent */}
+        <Script
+          src="https://app.secureprivacy.ai/script/6aa45b881266cf57bf8c9443.js"
+          strategy="afterInteractive"
+        />
+
         <SmoothScroll>
           <ClickSpark
             sparkColor='#fff'
