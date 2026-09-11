@@ -129,12 +129,6 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* SecurePrivacy Cookie Consent */}
-        <Script
-          src="https://app.secureprivacy.ai/script/6aa45b881266cf57bf8c9443.js"
-          strategy="afterInteractive"
-        />
-
         <SmoothScroll>
           <ClickSpark
             sparkColor='#fff'
