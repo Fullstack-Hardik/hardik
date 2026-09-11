@@ -7,6 +7,9 @@ import SmoothScroll from '@/components/ui/SmoothScroll';
 const SITE_URL = 'https://hardikyadav.vercel.app';
 
 export const metadata: Metadata = {
+  verification: {
+    google: 'G-MCfspvx9O7zZA50yCn9vyam-q_GCguhEWLJwNp9vw',
+  },
   metadataBase: new URL(SITE_URL),
   title: {
     default: 'Hardik Yadav — Full-Stack Developer, Software Engineer & AI Builder',
