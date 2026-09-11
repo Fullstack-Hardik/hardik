@@ -302,7 +302,7 @@ const DriftWall = ({
             <div className="drift-wall__col" key={`col-${c}`}>
               <div className="drift-wall__track" ref={el => { trackRefs.current[c] = el!; }}>
                 {copies.map((_, copyIndex) =>
-                  col.map((item, itemIndex) => renderTile(item, `${c}-${copyIndex}-${itemIndex}`, c))
+                  col.map((item: any, itemIndex: number) => renderTile(item, `${c}-${copyIndex}-${itemIndex}`, c))
                 )}
               </div>
             </div>
