@@ -8,35 +8,42 @@ import { Footer } from "@/components/ui/Footer";
 import Navbar from "@/components/ui/Navbar";
 import { motion, AnimatePresence } from "framer-motion";
 import { Outfit } from "next/font/google";
-import Head from "next/head";
 import Link from "next/link";
 
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "900"] });
 
 const faqs = [
   {
-    question: "What services does your digital agency offer?",
-    answer: "We are a full-service digital agency specializing in High-Performance Web Development, UI/UX Design, SEO Optimization, and Data-Driven Digital Marketing. From modern landing pages to complex, scalable full-stack web applications, we handle everything from the initial design concept to deploying robust backend architectures on modern cloud infrastructure."
+    question: "Who is Hardik Yadav?",
+    answer: "Hardik Yadav is a full-stack developer and software engineer who builds web applications, APIs, AI-powered products and digital experiences. He works across frontend, backend, databases, deployment and UI/UX."
   },
   {
-    question: "How long does a typical website project take to launch?",
-    answer: "Project timelines vary strictly based on complexity. A standard corporate website typically takes 4-6 weeks to design, develop, and launch. For complex web applications with custom backends and integrations, the timeline is usually 3-4 months. We provide a fully detailed milestone breakdown during our initial planning phase so you are always updated."
+    question: "What does Hardik Yadav do?",
+    answer: "Hardik works across the full stack — from building responsive React and Next.js frontends to designing REST APIs with Node.js and Express, managing MongoDB and PostgreSQL databases, deploying to cloud platforms and integrating AI capabilities into web applications."
   },
   {
-    question: "Do you offer ongoing website maintenance and support?",
-    answer: "Absolutely! We offer ongoing retainer packages that cover critical security updates, uptime and performance monitoring, content updates, and continuous SEO optimization. This ensures your site stays lightning fast, deeply secure, and highly ranked on search engines long after launch."
+    question: "What technologies does Hardik use?",
+    answer: "Hardik's core stack includes React, Next.js, TypeScript, JavaScript, Node.js, Express.js, MongoDB, PostgreSQL, Tailwind CSS, and modern cloud infrastructure including Vercel and AWS. He also works with AI/LLM integrations and developer tooling."
   },
   {
-    question: "How much does a new website or web application cost?",
-    answer: "Every project is entirely unique. We price based on scope, technical features, and required design resources. We offer flexible pricing packages tailored to both aggressive startups and scalable enterprise solutions. Please reach out to us for a free, comprehensive technical consultation and quote."
+    question: "Does Hardik build AI applications?",
+    answer: "Yes. Hardik integrates AI and LLM capabilities into web applications, from intelligent product features and automation to AI-powered workflows. He focuses on doing this without compromising user experience."
   },
   {
-    question: "Will my website be mobile-friendly and SEO optimized?",
-    answer: "Yes, without a doubt. Every website we build is fully responsive using a mobile-first approach, meaning it looks and performs flawlessly on any screen size. We also strictly adhere to modern SEO best practices to ensure high visibility on search engines right out of the box."
+    question: "Can I hire Hardik for a web project?",
+    answer: "Yes, Hardik is available for web development projects, collaborations and consulting. Visit the Contact page to get in touch and discuss your project requirements."
   },
   {
-    question: "What technologies and frameworks do you use?",
-    answer: "We utilize modern, high-performance tech stacks to ensure blazing fast speeds. Our primary tools include React, Next.js, Node.js, Express.js, TypeScript, and Tailwind CSS. We also leverage top-tier Cloud platforms (like AWS and GCP) for powerful, scalable backend infrastructure and databases."
+    question: "Where can I see Hardik's projects?",
+    answer: "You can explore Hardik's work on the Projects page of this website, which includes real full-stack applications with case studies covering architecture, technology stack, challenges and outcomes."
+  },
+  {
+    question: "Where does Hardik share coding content?",
+    answer: "Hardik shares technical articles, development insights and project write-ups on the Blog section of this website. You can also find his code on his GitHub profile."
+  },
+  {
+    question: "How can I contact Hardik?",
+    answer: "Use the Contact page on this website to send Hardik a message directly. You can also connect through his verified developer profiles listed in the site footer."
   }
 ];
 
@@ -111,11 +118,6 @@ export default function FAQsPage() {
 
   return (
     <>
-      <Head>
-        <title>Frequently Asked Questions | HRDK Digital</title>
-        <meta name="description" content="Find answers to all your questions about our digital agency services, web development, SEO, and more." />
-      </Head>
-      
       {/* SEO Schema for FAQs */}
       <script
         type="application/ld+json"
