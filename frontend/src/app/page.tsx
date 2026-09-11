@@ -12,6 +12,7 @@ const FlowArt = dynamic(() => import("@/components/ui/story-scroll"));
 const FlowSection = dynamic(() => import("@/components/ui/story-scroll").then(mod => mod.FlowSection));
 const Footer = dynamic(() => import("@/components/ui/Footer").then(mod => mod.Footer));
 import Navbar from "@/components/ui/Navbar";
+import { TypingDemo } from "@/components/ui/TypingDemo";
 
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -33,15 +34,15 @@ export default function Home() {
   }, []);
 
   const techLogos = [
-    { node: <SiReact className="text-zinc-500 hover:text-[#61DAFB] transition-colors" />, title: "React" },
-    { node: <SiNextdotjs className="text-zinc-500 hover:text-white transition-colors" />, title: "Next.js" },
-    { node: <SiTypescript className="text-zinc-500 hover:text-[#3178C6] transition-colors" />, title: "TypeScript" },
-    { node: <SiTailwindcss className="text-zinc-500 hover:text-[#06B6D4] transition-colors" />, title: "Tailwind CSS" },
-    { node: <SiPython className="text-zinc-500 hover:text-[#3776AB] transition-colors" />, title: "Python" },
-    { node: <SiNodedotjs className="text-zinc-500 hover:text-[#339933] transition-colors" />, title: "Node.js" },
-    { node: <SiFigma className="text-zinc-500 hover:text-[#F24E1E] transition-colors" />, title: "Figma" },
-    { node: <SiGooglecloud className="text-zinc-500 hover:text-[#4285F4] transition-colors" />, title: "Google Cloud" },
-    { node: <SiFirebase className="text-zinc-500 hover:text-[#FFCA28] transition-colors" />, title: "Firebase" },
+    { node: <SiReact className="text-zinc-500 hover:text-[#61DAFB] transition-colors text-3xl" />, title: "React" },
+    { node: <SiNextdotjs className="text-zinc-500 hover:text-white transition-colors text-3xl" />, title: "Next.js" },
+    { node: <SiTypescript className="text-zinc-500 hover:text-[#3178C6] transition-colors text-3xl" />, title: "TypeScript" },
+    { node: <SiTailwindcss className="text-zinc-500 hover:text-[#06B6D4] transition-colors text-3xl" />, title: "Tailwind CSS" },
+    { node: <SiPython className="text-zinc-500 hover:text-[#3776AB] transition-colors text-3xl" />, title: "Python" },
+    { node: <SiNodedotjs className="text-zinc-500 hover:text-[#339933] transition-colors text-3xl" />, title: "Node.js" },
+    { node: <SiFigma className="text-zinc-500 hover:text-[#F24E1E] transition-colors text-3xl" />, title: "Figma" },
+    { node: <SiGooglecloud className="text-zinc-500 hover:text-[#4285F4] transition-colors text-3xl" />, title: "Google Cloud" },
+    { node: <SiFirebase className="text-zinc-500 hover:text-[#FFCA28] transition-colors text-3xl" />, title: "Firebase" },
   ];
 
   const servicesData = [
@@ -139,18 +140,21 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Marquee loop icons line in bottom of hero section */}
-        <div className="absolute bottom-12 left-0 w-full z-20 transform -rotate-2 py-4">
-          <LogoLoop
-            logos={techLogos}
-            speed={40}
-            direction="left"
-            logoHeight={40}
-            gap={64}
-            fadeOut
-            fadeOutColor="#000000"
-            ariaLabel="Technology partners"
-          />
+        {/* Tech Stack Marquee Banner */}
+        <div className="absolute bottom-0 left-0 w-full z-20 bg-black/40 backdrop-blur-md border-y border-white/5 py-4 md:py-6 flex items-center shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
+          
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black pointer-events-none z-10" />
+
+          <div className="w-full relative z-0">
+            <LogoLoop
+              logos={techLogos}
+              speed={30}
+              direction="left"
+              logoHeight={32}
+              gap={100}
+              ariaLabel="Technology partners"
+            />
+          </div>
         </div>
       </section>
 
@@ -167,6 +171,15 @@ export default function Home() {
         enableMagnetism={true}
         clickEffect={true}
       />
+
+      {/* Code Screen & Keyboard Section */}
+      <section className="w-full py-12 flex flex-col items-center justify-center bg-black border-t border-white/5 relative z-10">
+        <div className="text-center mb-8 px-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Command the Code</h2>
+          <p className="text-zinc-400 max-w-xl mx-auto">An interactive demonstration of full-stack expertise.</p>
+        </div>
+        <TypingDemo />
+      </section>
 
       {/* About Me Section (Story Scroll) */}
       <FlowArt aria-label="About Me Section">

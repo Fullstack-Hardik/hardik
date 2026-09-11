@@ -42,7 +42,7 @@ export default function ContactPage() {
             
             {/* Top Row: DIGITAL */}
             <div className="w-full flex justify-center md:justify-end md:pr-32 lg:pr-48 relative">
-              <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-light tracking-tight text-white/90">
+              <h1 className="text-[clamp(3.5rem,12vw,7rem)] font-light tracking-tight text-white/90 leading-none">
                 DIGITAL
               </h1>
               {/* Floating Text 1 */}
@@ -54,15 +54,15 @@ export default function ContactPage() {
             </div>
 
             {/* Middle Row: PR [Icon] DUCTS */}
-            <div className="w-full flex justify-center items-center gap-4 md:gap-8 relative">
-              <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-light tracking-tight text-white/90">
+            <div className="w-full flex justify-center items-center gap-2 md:gap-8 relative">
+              <h1 className="text-[clamp(3.5rem,12vw,7rem)] font-light tracking-tight text-white/90 leading-none">
                 PR
               </h1>
-              <div className="relative flex items-center justify-center w-20 h-20 md:w-32 md:h-32">
+              <div className="relative flex items-center justify-center w-16 h-16 md:w-32 md:h-32">
                 <BrainCircuit className="w-full h-full text-white/90 stroke-1" />
-                <span className="absolute text-2xl md:text-4xl font-light text-white/90">?</span>
+                <span className="absolute text-xl md:text-4xl font-light text-white/90">?</span>
               </div>
-              <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-light tracking-tight text-white/90">
+              <h1 className="text-[clamp(3.5rem,12vw,7rem)] font-light tracking-tight text-white/90 leading-none">
                 DUCTS
               </h1>
               
@@ -75,14 +75,14 @@ export default function ContactPage() {
             </div>
 
             {/* Bottom Row: DESIGN [Icon] CODE */}
-            <div className="w-full flex justify-center items-center gap-4 md:gap-8">
-              <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-light tracking-tight text-white/90">
+            <div className="w-full flex justify-center items-center gap-2 md:gap-8">
+              <h1 className="text-[clamp(3.5rem,12vw,7rem)] font-light tracking-tight text-white/90 leading-none">
                 DESIGN
               </h1>
               <div className="flex items-center justify-center">
-                <Heart className="w-16 h-16 md:w-28 md:h-28 text-[#ff4b5c] fill-[#ff4b5c]" />
+                <Heart className="w-12 h-12 md:w-28 md:h-28 text-[#ff4b5c] fill-[#ff4b5c]" />
               </div>
-              <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-light tracking-tight text-white/90">
+              <h1 className="text-[clamp(3.5rem,12vw,7rem)] font-light tracking-tight text-white/90 leading-none">
                 CODE
               </h1>
             </div>
@@ -104,90 +104,120 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Details */}
-      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10 bg-black">
+      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 md:gap-24 relative z-10 bg-black">
         
-        {/* Contact Details */}
-        <div className="flex flex-col justify-center space-y-12">
-          <div>
-            <h2 className="text-4xl font-bold tracking-tight mb-6">Contact Information</h2>
-            <p className="text-zinc-400 text-lg leading-relaxed">
-              Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions.
+        {/* Contact Details (Redesigned) */}
+        <div className="flex flex-col justify-center space-y-12 relative">
+          {/* Subtle Glow Behind Text */}
+          <div className="absolute top-0 left-0 w-64 h-64 bg-[#ff5800] rounded-full blur-[120px] opacity-10 pointer-events-none"></div>
+          
+          <div className="relative z-10">
+            <h2 className="text-5xl md:text-6xl font-black tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-zinc-500">
+              Let's Connect.
+            </h2>
+            <p className="text-zinc-400 text-lg leading-relaxed max-w-md">
+              Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!
             </p>
           </div>
 
-          <div className="space-y-8">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-zinc-900 flex items-center justify-center flex-shrink-0 text-[#ff5800]">
-                <Mail className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-1">Email</h3>
-                <p className="text-zinc-400">hello@vantage.com</p>
-                <p className="text-zinc-400">support@vantage.com</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-zinc-900 flex items-center justify-center flex-shrink-0 text-[#ff5800]">
-                <Phone className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-1">Phone</h3>
-                <p className="text-zinc-400">+1 (555) 123-4567</p>
-                <p className="text-zinc-400">Mon-Fri from 8am to 5pm</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 relative z-10">
+            {/* Card 1 */}
+            <div className="group relative overflow-hidden rounded-2xl bg-zinc-900/40 border border-white/5 p-6 backdrop-blur-md hover:bg-zinc-900/60 transition-colors">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#ff5800]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="flex items-center gap-4 relative z-10">
+                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0 text-[#ff5800] border border-[#ff5800]/30 group-hover:scale-110 transition-transform">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">Email</h3>
+                  <p className="text-zinc-400 text-sm">hardikyadaven@gmail.com</p>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-zinc-900 flex items-center justify-center flex-shrink-0 text-[#ff5800]">
-                <MapPin className="w-5 h-5" />
+            {/* Card 2 */}
+            <div className="group relative overflow-hidden rounded-2xl bg-zinc-900/40 border border-white/5 p-6 backdrop-blur-md hover:bg-zinc-900/60 transition-colors">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#ff5800]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="flex items-center gap-4 relative z-10">
+                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0 text-[#ff5800] border border-[#ff5800]/30 group-hover:scale-110 transition-transform">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">Phone</h3>
+                  <p className="text-zinc-400 text-sm">+91 98707 72415</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-1">Office</h3>
-                <p className="text-zinc-400">123 Innovation Drive</p>
-                <p className="text-zinc-400">Tech District, SF 94103</p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group relative overflow-hidden rounded-2xl bg-zinc-900/40 border border-white/5 p-6 backdrop-blur-md hover:bg-zinc-900/60 transition-colors">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#ff5800]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="flex items-center gap-4 relative z-10">
+                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0 text-[#ff5800] border border-[#ff5800]/30 group-hover:scale-110 transition-transform">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">Location</h3>
+                  <p className="text-zinc-400 text-sm">Bokaro Steel City, India</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Contact Form */}
-        <div className="bg-zinc-900/50 p-8 md:p-10 rounded-3xl border border-white/10 backdrop-blur-xl">
-          <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
-            <div className="flex flex-col gap-2">
-              <label htmlFor="name" className="text-sm font-medium text-zinc-300 ml-1">Full Name</label>
-              <input 
-                type="text" 
-                id="name" 
-                placeholder="John Doe" 
-                className="w-full bg-zinc-950/50 border border-white/10 rounded-xl px-5 py-4 text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-[#ff5800] focus:border-transparent transition-all"
-              />
-            </div>
+        {/* Contact Form (Redesigned) */}
+        <div className="relative group perspective-1000">
+          <div className="absolute -inset-0.5 bg-gradient-to-br from-[#ff5800] via-zinc-800 to-transparent rounded-[2rem] blur opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <div className="relative bg-[#0a0a0a] p-8 md:p-12 rounded-[2rem] border border-white/10 shadow-2xl h-full flex flex-col justify-center">
             
-            <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="text-sm font-medium text-zinc-300 ml-1">Email Address</label>
-              <input 
-                type="email" 
-                id="email" 
-                placeholder="john@example.com" 
-                className="w-full bg-zinc-950/50 border border-white/10 rounded-xl px-5 py-4 text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-[#ff5800] focus:border-transparent transition-all"
-              />
+            <div className="mb-10">
+              <h3 className="text-3xl font-semibold mb-2">Send a Message</h3>
+              <p className="text-zinc-500 text-sm">I'll get back to you in 1-2 business days.</p>
             </div>
-            
-            <div className="flex flex-col gap-2">
-              <label htmlFor="message" className="text-sm font-medium text-zinc-300 ml-1">Message</label>
-              <textarea 
-                id="message" 
-                placeholder="How can we help you?" 
-                rows={5}
-                className="w-full bg-zinc-950/50 border border-white/10 rounded-xl px-5 py-4 text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-[#ff5800] focus:border-transparent transition-all resize-none"
-              ></textarea>
-            </div>
-            
-            <button className="w-full mt-4 py-4 rounded-xl bg-white text-black font-bold text-lg hover:bg-[#ff5800] hover:text-white transition-colors duration-300">
-              Send Message
-            </button>
-          </form>
+
+            <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex flex-col gap-2 relative">
+                  <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="John Doe" 
+                    className="peer w-full bg-zinc-900/50 border-b-2 border-white/10 px-4 py-4 text-white placeholder-transparent focus:outline-none focus:border-[#ff5800] transition-all focus:bg-zinc-900 rounded-t-lg"
+                  />
+                  <label htmlFor="name" className="absolute left-4 top-1 text-[10px] uppercase tracking-wider font-bold text-zinc-500 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-placeholder-shown:font-normal peer-focus:top-1 peer-focus:text-[10px] peer-focus:font-bold peer-focus:text-[#ff5800] cursor-text">Full Name</label>
+                </div>
+                
+                <div className="flex flex-col gap-2 relative">
+                  <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="john@example.com" 
+                    className="peer w-full bg-zinc-900/50 border-b-2 border-white/10 px-4 py-4 text-white placeholder-transparent focus:outline-none focus:border-[#ff5800] transition-all focus:bg-zinc-900 rounded-t-lg"
+                  />
+                  <label htmlFor="email" className="absolute left-4 top-1 text-[10px] uppercase tracking-wider font-bold text-zinc-500 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-placeholder-shown:font-normal peer-focus:top-1 peer-focus:text-[10px] peer-focus:font-bold peer-focus:text-[#ff5800] cursor-text">Email Address</label>
+                </div>
+              </div>
+              
+              <div className="flex flex-col gap-2 relative mt-2">
+                <textarea 
+                  id="message" 
+                  placeholder="How can we help you?" 
+                  rows={4}
+                  className="peer w-full bg-zinc-900/50 border-b-2 border-white/10 px-4 py-6 text-white placeholder-transparent focus:outline-none focus:border-[#ff5800] transition-all focus:bg-zinc-900 rounded-t-lg resize-none"
+                ></textarea>
+                <label htmlFor="message" className="absolute left-4 top-2 text-[10px] uppercase tracking-wider font-bold text-zinc-500 transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-sm peer-placeholder-shown:font-normal peer-focus:top-2 peer-focus:text-[10px] peer-focus:font-bold peer-focus:text-[#ff5800] cursor-text">Your Message</label>
+              </div>
+              
+              <button className="w-full mt-6 py-4 rounded-xl bg-white text-black font-bold text-lg hover:bg-[#ff5800] hover:text-white transition-colors duration-300 flex items-center justify-center gap-3 group">
+                Send Request
+                <div className="w-6 h-6 rounded-full bg-black/10 group-hover:bg-white/20 flex items-center justify-center transform group-hover:translate-x-2 transition-all">
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 7H11M11 7L7 3M11 7L7 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 

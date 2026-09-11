@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDown, MessageCircleQuestion } from "lucide-react";
 import GlyphPortal from "@/components/ui/glyph-portal";
 import Beams from "@/components/ui/Beams";
@@ -195,22 +195,7 @@ export default function FAQsPage() {
                 ))}
               </div>
               
-              <div className="mt-20 p-8 rounded-2xl bg-[#ffffff]/5 border border-[#ffffff]/20 w-full">
-                <h3 className="text-2xl font-bold text-white mb-4">Want a custom solution?</h3>
-                <p className="text-zinc-400 mb-6">Our experts can tailor a perfect package exactly for your business needs.</p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-3 text-zinc-300">
-                    <div className="w-2 h-2 rounded-full bg-white" /> High-performance custom web apps
-                  </li>
-                  <li className="flex items-center gap-3 text-zinc-300">
-                    <div className="w-2 h-2 rounded-full bg-white" /> Secure cloud integrations & APIs
-                  </li>
-                  <li className="flex items-center gap-3 text-zinc-300">
-                    <div className="w-2 h-2 rounded-full bg-white" /> Real-time tracking and metrics
-                  </li>
-                </ul>
-              </div>
-              
+
               <motion.div 
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -13,6 +13,7 @@ export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
     { name: "Gallery", href: "/gallery" },
+    { name: "Blog", href: "/blog" },
     { name: "FAQs", href: "/faqs" },
     { name: "Services", href: "/#services" },
     { name: "Contact", href: "/contact" },

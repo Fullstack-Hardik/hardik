@@ -9,12 +9,30 @@ import Navbar from "@/components/ui/Navbar";
 
 const projects = [
   {
+    title1: "HRDKPen",
+    title2: "Code IDE",
+    description: "A fully functional AI web IDE for coding and learning, featuring CodeMirror, virtual terminal, and an AI chat agent for assistance.",
+    imageSrc: "/proj_ide_hrdkpen.png",
+    linkTo: "https://hrdkpen-code.vercel.app",
+    index: "01",
+    label: "Web IDE"
+  },
+  {
+    title1: "Vertex",
+    title2: "CRM",
+    description: "A fast and intuitive CRM dashboard with task management, messaging, employee and manager panels, activity logs, screen sharing, and full secure authentication.",
+    imageSrc: "/proj_crm_vertex.png",
+    linkTo: "https://vertexcrm.vercel.app/",
+    index: "02",
+    label: "Management"
+  },
+  {
     title1: "Vertexiae",
     title2: "Platform",
     description: "A comprehensive event and HR management dashboard with real-time analytics and employee tracking.",
     imageSrc: "/proj_event.png",
     linkTo: "#",
-    index: "01",
+    index: "03",
     label: "HR & Events"
   },
   {
@@ -23,7 +41,7 @@ const projects = [
     description: "A centralized task management and team collaboration hub with kanban boards and workflow automation.",
     imageSrc: "/proj_task.png",
     linkTo: "#",
-    index: "02",
+    index: "04",
     label: "Productivity"
   },
   {
@@ -32,7 +50,7 @@ const projects = [
     description: "A modern tech blog and news portal featuring seamless reading experiences and content discovery.",
     imageSrc: "/proj_blog.png",
     linkTo: "#",
-    index: "03",
+    index: "05",
     label: "Publishing"
   },
   {
@@ -41,7 +59,7 @@ const projects = [
     description: "An immersive virtual tour agency platform showcasing 3D spatial mapping and interactive property views.",
     imageSrc: "/proj_tour.png",
     linkTo: "#",
-    index: "04",
+    index: "06",
     label: "Virtual Reality"
   },
   {
@@ -50,7 +68,7 @@ const projects = [
     description: "A sophisticated corporate portfolio and trading platform with real-time market integrations.",
     imageSrc: "/proj_business.png",
     linkTo: "#",
-    index: "05",
+    index: "07",
     label: "Finance"
   },
   {
@@ -59,7 +77,7 @@ const projects = [
     description: "A luxurious e-commerce storefront for premium jewelry with seamless checkout and product visualization.",
     imageSrc: "/proj_jewelry.png",
     linkTo: "#",
-    index: "06",
+    index: "08",
     label: "E-Commerce"
   }
 ];
