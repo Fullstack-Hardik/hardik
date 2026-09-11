@@ -77,7 +77,7 @@ export const Component = ({ simulatedKey }: { simulatedKey?: string | null }) =>
     onClick?: () => void
     isPressed?: boolean
     isActive?: boolean
-    size?: "sm" | "default" | "lg" | "xl"
+    size?: "sm" | "default" | "lg" | "xl" | "xxl" | "space"
     actualKey?: string
   }) => {
     const sizeClasses = {
