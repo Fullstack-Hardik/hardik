@@ -18,7 +18,7 @@ const Skiper28 = () => {
   });
 
   const yMotionValue = useTransform(scrollYProgress, [0, 1], [400, -5000]);
-  const transform = useMotionTemplate`rotateX(15deg) translateY(${yMotionValue}px) translateZ(10px)`;
+  const transform = useMotionTemplate`rotateX(8deg) translateY(${yMotionValue}px) translateZ(10px)`;
 
   return (
     <>
@@ -35,7 +35,7 @@ const Skiper28 = () => {
           className="sticky top-0 mx-auto flex items-center justify-center bg-transparent py-20"
           style={{
             transformStyle: "preserve-3d",
-            perspective: "800px",
+            perspective: "1200px",
           }}
         >
           <motion.div
