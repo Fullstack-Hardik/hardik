@@ -28,7 +28,8 @@ export function Footer() {
 
         <div className="w-full flex flex-col md:flex-row justify-between items-center gap-8 pt-8 border-t border-white/10 bg-[#050505]/80 backdrop-blur-sm p-4 rounded-xl">
           <div className="flex items-center gap-3">
-            <img src="/logo.svg" alt="HRDK Logo" className="h-8 w-auto invert" />
+            <img src="/logo.svg" alt="HRDK Developers Logo" className="h-8 w-auto invert" />
+            <span className="text-white font-bold text-xl tracking-tight hidden md:block">HRDK Developers</span>
           </div>
           
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-center">
@@ -54,7 +55,7 @@ export function Footer() {
           </div>
 
           <p className="text-zinc-600 text-sm mt-4 md:mt-0 text-center md:text-right">
-            © {new Date().getFullYear()} HRDK. All rights reserved.
+            © {new Date().getFullYear()} HRDK Developers. All rights reserved.
           </p>
         </div>
       </div>

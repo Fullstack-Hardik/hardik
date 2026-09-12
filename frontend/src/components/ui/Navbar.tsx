@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -45,7 +46,14 @@ export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
               </Link>
             ))}
           </nav>
-          <button className="px-6 py-2.5 rounded-lg bg-white text-black font-semibold shadow-lg hover:bg-zinc-200 transition-colors">Sign Up</button>
+          <div className="flex items-center gap-4 text-zinc-400 border-l border-white/20 pl-6 ml-2">
+            <a href="https://github.com/fullstack-hardik" target="_blank" className="hover:text-white transition-colors" aria-label="GitHub"><FaGithub className="w-5 h-5" /></a>
+            <a href="https://www.linkedin.com/in/hardik-yadav-682016301/" target="_blank" className="hover:text-white transition-colors" aria-label="LinkedIn"><FaLinkedin className="w-5 h-5" /></a>
+          </div>
+          <div className="w-48 hidden lg:block">
+            <div className="gcse-search"></div>
+          </div>
+          <button className="px-6 py-2.5 rounded-lg bg-white text-black font-semibold shadow-lg hover:bg-zinc-200 transition-colors">Contact Me</button>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -87,8 +95,15 @@ export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
             </Link>
           ))}
         </nav>
+        <div className="flex items-center gap-6 text-zinc-400 mt-4 justify-center">
+            <a href="https://github.com/fullstack-hardik" target="_blank" className="hover:text-white transition-colors" aria-label="GitHub"><FaGithub className="w-6 h-6" /></a>
+            <a href="https://www.linkedin.com/in/hardik-yadav-682016301/" target="_blank" className="hover:text-white transition-colors" aria-label="LinkedIn"><FaLinkedin className="w-6 h-6" /></a>
+        </div>
+        <div className="w-full mt-4">
+          <div className="gcse-search"></div>
+        </div>
         <button className="mt-auto px-6 py-3 rounded-lg bg-white text-black font-semibold shadow-lg hover:bg-zinc-200 transition-colors w-full">
-          Sign Up
+          Contact Me
         </button>
       </div>
     </>

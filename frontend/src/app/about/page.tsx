@@ -43,10 +43,10 @@ export default function AboutPage() {
         
         <div className="relative z-10 text-center max-w-4xl px-4 pointer-events-none mt-20">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 animate-in slide-in-from-bottom duration-1000 slide-in-from-bottom-8 tracking-tighter">
-            Visionary <span className="text-orange-400">Builder</span>
+            The <span className="text-orange-400">Architect</span> Behind the Screen
           </h1>
           <p className="text-xl md:text-2xl text-orange-200/80 animate-in slide-in-from-bottom duration-1000 delay-300 slide-in-from-bottom-8 fill-mode-both font-medium">
-            I'm Hardik Yadav. I build digital excellence.
+            Discover the journey, the philosophy, and the tech stack that drives my work.
           </p>
         </div>
 

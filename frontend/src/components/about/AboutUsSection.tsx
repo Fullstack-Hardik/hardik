@@ -135,14 +135,17 @@ export default function AboutUsSection() {
         </motion.div>
 
         {/* Intro paragraph */}
-        <motion.p
-          className="text-center max-w-2xl mx-auto mb-16 text-gray-400 text-lg leading-relaxed"
+        <motion.div
+          className="text-center max-w-3xl mx-auto mb-16 text-gray-400 text-lg leading-relaxed space-y-4"
           variants={itemVariants}
         >
-          I&apos;m Hardik Yadav — a full-stack developer, software engineer, builder and lifelong learner.
-          I work across the entire stack, from interfaces and user experience to APIs, databases,
-          deployment and AI-powered products.
-        </motion.p>
+          <p>
+            Hi, I'm Hardik Yadav. My journey into software development wasn't just about learning syntax; it was about understanding how systems interact to create value. I am a Full-Stack Developer and AI Enthusiast based in Saharanpur, India, with a relentless drive for building things that matter.
+          </p>
+          <p>
+            Whether I'm designing an intuitive user interface, optimizing a complex backend database, or experimenting with the latest AI models, my approach remains the same: meticulous planning, clean execution, and continuous iteration. I believe that great software is a blend of hard engineering and empathetic design.
+          </p>
+        </motion.div>
 
         {/* Expertise Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
@@ -240,13 +243,12 @@ export default function AboutUsSection() {
           className="mt-24 p-10 rounded-3xl bg-zinc-900/50 border border-white/5 backdrop-blur-xl"
           variants={itemVariants}
         >
-          <h3 className="text-2xl font-bold text-white mb-6 text-center">How I Work</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <h3 className="text-2xl font-bold text-white mb-6 text-center">Core Principles</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: "Problem First", desc: "Understand the real requirement before choosing technology." },
-              { label: "Engineering Mindset", desc: "Prefer maintainable architecture over unnecessary complexity." },
-              { label: "Design Awareness", desc: "Treat performance, accessibility and UI/UX as part of the product." },
-              { label: "Build & Learn", desc: "Experiment, document lessons and turn mistakes into reusable knowledge." },
+              { label: "Performance First", desc: "Speed is a feature. I build with Core Web Vitals in mind, ensuring fast and efficient applications." },
+              { label: "Pixel Perfection", desc: "A great backend deserves a flawless frontend. UI/UX is paramount to everything I build." },
+              { label: "Continuous Learning", desc: "In a field that changes daily, adaptability and constant exploration are my strongest skills." },
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-2">
                 <span className="text-orange-400 text-xs font-bold uppercase tracking-widest">{item.label}</span>

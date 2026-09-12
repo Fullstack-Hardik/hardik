@@ -122,16 +122,15 @@ export default function Home() {
 
         <div className="relative z-10 flex flex-col items-start w-full px-6 lg:px-24 xl:px-32">
           <h1 className="flex flex-col font-semibold tracking-tighter text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.1] mb-6 drop-shadow-xl text-white">
-            <span>Build Your</span>
-            <span className="text-zinc-300">Digital Empire.</span>
+            <span>Engineering</span>
+            <span className="text-zinc-300">Digital Excellence.</span>
           </h1>
-          <p className="text-zinc-300 font-light text-lg md:text-xl max-w-xl mb-10 drop-shadow-lg">
-            We provide end-to-end digital services to grow your brand.<br className="hidden md:block"/>
-            From web design to scalable architecture, we<br className="hidden md:block"/>
-            deliver solutions that drive real results.
+          <p className="text-zinc-300 font-light text-lg md:text-xl max-w-2xl mb-10 drop-shadow-lg">
+            I am Hardik Yadav—a Full-Stack Developer, AI Builder, and UX Designer.<br className="hidden md:block"/>
+            I craft scalable web architectures and intelligent systems that solve complex problems.
           </p>
           <button className="h-12 px-8 rounded-lg bg-white text-black font-semibold shadow-xl flex items-center gap-4 hover:bg-zinc-200 transition-colors group">
-            Get Started
+            View My Work
             <div className="w-8 h-8 rounded-md bg-black flex items-center justify-center transform group-hover:translate-x-1 transition-transform">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 7H11M11 7L7 3M11 7L7 11" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -188,16 +187,16 @@ export default function Home() {
           <hr className="my-[2vw] border-none border-t border-zinc-700" />
           <div>
             <h1 className="text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] uppercase tracking-tight">
-              Create
+              Beyond
               <br />
-              Without
+              The
               <br />
-              Limits
+              Code
             </h1>
           </div>
           <hr className="my-[2vw] border-none border-t border-zinc-700" />
           <p className="mt-auto max-w-[50ch] text-[clamp(1rem,2vw,1.5rem)] font-light leading-relaxed text-zinc-300">
-            I am a passionate developer and architect dedicated to turning complex problems into elegant solutions. My journey in tech is driven by an insatiable curiosity and a love for building products that matter.
+            I don't just write scripts; I build robust digital ecosystems. From architecting high-performance Next.js frontends to training machine learning models, my focus is always on delivering seamless, impactful user experiences. Based in Saharanpur, building for the world.
           </p>
         </FlowSection>
 
@@ -220,21 +219,21 @@ export default function Home() {
           <hr className="my-[2vw] border-none border-t border-white/30" />
           <div className="flex flex-wrap gap-[3vw]">
             <div className="min-w-[180px] flex-1">
-              <p className="mb-2 text-sm font-bold uppercase tracking-wider text-white">Frontend</p>
+              <p className="mb-2 text-sm font-bold uppercase tracking-wider text-white">Frontend Architecture</p>
               <p className="text-[clamp(0.85rem,1vw,1.05rem)] leading-relaxed text-white/80">
-                React, Next.js, and beautiful UI/UX that delights users.
+                React, Next.js, Tailwind CSS, and Framer Motion for immersive experiences.
               </p>
             </div>
             <div className="min-w-[180px] flex-1">
-              <p className="mb-2 text-sm font-bold uppercase tracking-wider text-white">Backend</p>
+              <p className="mb-2 text-sm font-bold uppercase tracking-wider text-white">Backend & Systems</p>
               <p className="text-[clamp(0.85rem,1vw,1.05rem)] leading-relaxed text-white/80">
-                Node.js, Express.js REST APIs, and scalable architecture.
+                Node.js, Python, scalable REST/GraphQL APIs, and SQL/NoSQL databases.
               </p>
             </div>
             <div className="min-w-[180px] flex-1">
-              <p className="mb-2 text-sm font-bold uppercase tracking-wider text-white">Architecture</p>
+              <p className="mb-2 text-sm font-bold uppercase tracking-wider text-white">AI & Emerging Tech</p>
               <p className="text-[clamp(0.85rem,1vw,1.05rem)] leading-relaxed text-white/80">
-                Cloud deployments, CI/CD, and robust infrastructure.
+                Machine Learning models, LLM Integrations, and intelligent data pipelines.
               </p>
             </div>
           </div>

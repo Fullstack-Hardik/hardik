@@ -9,6 +9,7 @@ import Navbar from "@/components/ui/Navbar";
 import { motion, AnimatePresence } from "framer-motion";
 import { Outfit } from "next/font/google";
 import Link from "next/link";
+import FaqSection from "@/components/ui/habit-faq-scroller";
 
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "900"] });
 
@@ -47,50 +48,41 @@ const faqs = [
   }
 ];
 
-function AccordionItem({ question, answer, index }: { question: string, answer: string, index: number }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <motion.div 
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="border-b border-white/10 overflow-hidden"
-    >
-      <button 
-        onClick={() => setIsOpen(!isOpen)} 
-        className="w-full flex justify-between items-center py-8 text-left focus:outline-none group"
-      >
-        <span className="text-xl md:text-2xl font-medium text-white group-hover:text-[#ff5800] transition-colors duration-300">
-          {question}
-        </span>
-        <motion.div
-          animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="flex-shrink-0 ml-4"
-        >
-          <ChevronDown className="w-6 h-6 text-[#ff5800]" />
-        </motion.div>
-      </button>
-      
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0, filter: "blur(10px)" }}
-            animate={{ height: "auto", opacity: 1, filter: "blur(0px)" }}
-            exit={{ height: 0, opacity: 0, filter: "blur(10px)" }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-          >
-            <div className="pb-8">
-              <p className="text-zinc-400 text-lg leading-relaxed">{answer}</p>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.div>
-  );
-}
+const faqData = {
+  mainTitle: "Frequently Asked Questions",
+  mainSubtitle: "Have questions? We've got answers. If you can't find what you're looking for, feel free to contact us.",
+  rows: [
+    {
+      id: 'row1',
+      speed: '60s',
+      direction: 'left' as const,
+      faqItems: [
+        { id: 'q1', question: faqs[0].question, answer: faqs[0].answer },
+        { id: 'q2', question: faqs[1].question, answer: faqs[1].answer },
+        { id: 'q3', question: faqs[2].question, answer: faqs[2].answer },
+      ]
+    },
+    {
+      id: 'row2',
+      speed: '45s',
+      direction: 'right' as const,
+      faqItems: [
+        { id: 'q4', question: faqs[3].question, answer: faqs[3].answer },
+        { id: 'q5', question: faqs[4].question, answer: faqs[4].answer },
+        { id: 'q6', question: faqs[5].question, answer: faqs[5].answer },
+      ]
+    },
+    {
+      id: 'row3',
+      speed: '70s',
+      direction: 'left' as const,
+      faqItems: [
+        { id: 'q7', question: faqs[6].question, answer: faqs[6].answer },
+        { id: 'q8', question: faqs[7].question, answer: faqs[7].answer },
+      ]
+    }
+  ]
+};
 
 export default function FAQsPage() {
   const [currentWord, setCurrentWord] = useState("FAQS");
@@ -180,21 +172,8 @@ export default function FAQsPage() {
           >
             {/* CONTENT INSIDE THE PORTAL */}
             <div className="w-full max-w-4xl mx-auto px-6 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col items-start min-h-screen relative z-10 pointer-events-auto">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="p-3 bg-[#ffffff]/10 rounded-xl">
-                  <MessageCircleQuestion className="w-8 h-8 text-white" />
-                </div>
-                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">How can we help?</h2>
-              </div>
-              
-              <p className="text-xl text-zinc-400 mb-16 max-w-2xl">
-                Everything you need to know about our services, pricing, and how we can elevate your digital presence.
-              </p>
-              
-              <div className="w-full flex flex-col gap-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem key={index} index={index} question={faq.question} answer={faq.answer} />
-                ))}
+              <div className="w-full flex justify-center -ml-4 md:ml-0">
+                <FaqSection data={faqData} />
               </div>
               
 

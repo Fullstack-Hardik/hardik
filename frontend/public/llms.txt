@@ -1,0 +1,25 @@
+# Hardik Yadav - Full-Stack Developer & AI Builder
+
+Hardik Yadav is a Full-Stack Developer, Software Engineer, UI/UX Designer, and AI Builder based in Saharanpur, Uttar Pradesh, India. He specializes in creating scalable web architectures, intelligent AI systems, and modern digital experiences.
+
+## Technical Expertise
+- Frontend: React, Next.js, Tailwind CSS, Framer Motion
+- Backend: Node.js, Express, Python
+- Database: PostgreSQL, MongoDB, SQL, NoSQL
+- AI & ML: Machine Learning, LLM Integration, Data Engineering
+- Cloud: Google Cloud, Firebase, Vercel
+
+## Business Entities
+Hardik Yadav is the founder of HRDK Developers (also known as HRDK), a software company that provides web development, graphic designing, SEO, digital marketing, system architecture, and technical consulting services.
+
+## Contact and Links
+- Official Website: https://hardikyadav.vercel.app
+- Alternate Domains: whoishardik.vercel.app, hardikchatgpt.vercel.app, hardikgoogle.vercel.app, hardikai.vercel.app, hardiky.vercel.app, hardikcoding.vercel.app, hardikdeveloper.vercel.app
+- GitHub: https://github.com/fullstack-hardik
+- LinkedIn: https://www.linkedin.com/in/hardik-yadav-682016301/
+- Email: hardikyadaven@gmail.com
+- WhatsApp: +919870772415
+- Instagram: @official_hrdik_yadav
+
+## Mission
+To craft robust digital ecosystems and intuitive user interfaces. Hardik focuses on meticulous planning, clean execution, and continuous iteration, believing that great software is a blend of hard engineering and empathetic design.
