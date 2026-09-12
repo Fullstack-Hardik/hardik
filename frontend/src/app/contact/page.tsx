@@ -175,12 +175,15 @@ export default function ContactPage() {
               <p className="text-zinc-500 text-sm">I'll get back to you in 1-2 business days.</p>
             </div>
 
-            <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+            <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-6">
+              <input type="hidden" name="access_key" value="ec747eb6-7916-4048-8c19-df2450da63f2" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2 relative">
                   <input 
                     type="text" 
                     id="name" 
+                    name="name"
+                    required
                     placeholder="John Doe" 
                     className="peer w-full bg-zinc-900/50 border-b-2 border-white/10 px-4 py-4 text-white placeholder-transparent focus:outline-none focus:border-[#ff5800] transition-all focus:bg-zinc-900 rounded-t-lg"
                   />
@@ -191,6 +194,8 @@ export default function ContactPage() {
                   <input 
                     type="email" 
                     id="email" 
+                    name="email"
+                    required
                     placeholder="john@example.com" 
                     className="peer w-full bg-zinc-900/50 border-b-2 border-white/10 px-4 py-4 text-white placeholder-transparent focus:outline-none focus:border-[#ff5800] transition-all focus:bg-zinc-900 rounded-t-lg"
                   />
@@ -201,6 +206,8 @@ export default function ContactPage() {
               <div className="flex flex-col gap-2 relative mt-2">
                 <textarea 
                   id="message" 
+                  name="message"
+                  required
                   placeholder="How can we help you?" 
                   rows={4}
                   className="peer w-full bg-zinc-900/50 border-b-2 border-white/10 px-4 py-6 text-white placeholder-transparent focus:outline-none focus:border-[#ff5800] transition-all focus:bg-zinc-900 rounded-t-lg resize-none"
@@ -208,7 +215,7 @@ export default function ContactPage() {
                 <label htmlFor="message" className="absolute left-4 top-2 text-[10px] uppercase tracking-wider font-bold text-zinc-500 transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-sm peer-placeholder-shown:font-normal peer-focus:top-2 peer-focus:text-[10px] peer-focus:font-bold peer-focus:text-[#ff5800] cursor-text">Your Message</label>
               </div>
               
-              <button className="w-full mt-6 py-4 rounded-xl bg-white text-black font-bold text-lg hover:bg-[#ff5800] hover:text-white transition-colors duration-300 flex items-center justify-center gap-3 group">
+              <button type="submit" className="w-full mt-6 py-4 rounded-xl bg-white text-black font-bold text-lg hover:bg-[#ff5800] hover:text-white transition-colors duration-300 flex items-center justify-center gap-3 group">
                 Send Request
                 <div className="w-6 h-6 rounded-full bg-black/10 group-hover:bg-white/20 flex items-center justify-center transform group-hover:translate-x-2 transition-all">
                   <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
