@@ -50,9 +50,7 @@ export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
             <a href="https://github.com/fullstack-hardik" target="_blank" className="hover:text-white transition-colors" aria-label="GitHub"><FaGithub className="w-5 h-5" /></a>
             <a href="https://www.linkedin.com/in/hardik-yadav-682016301/" target="_blank" className="hover:text-white transition-colors" aria-label="LinkedIn"><FaLinkedin className="w-5 h-5" /></a>
           </div>
-          <div className="w-48 hidden lg:block">
-            <div className="gcse-search"></div>
-          </div>
+
           <button className="px-6 py-2.5 rounded-lg bg-white text-black font-semibold shadow-lg hover:bg-zinc-200 transition-colors">Contact Me</button>
         </div>
 
@@ -99,9 +97,7 @@ export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
             <a href="https://github.com/fullstack-hardik" target="_blank" className="hover:text-white transition-colors" aria-label="GitHub"><FaGithub className="w-6 h-6" /></a>
             <a href="https://www.linkedin.com/in/hardik-yadav-682016301/" target="_blank" className="hover:text-white transition-colors" aria-label="LinkedIn"><FaLinkedin className="w-6 h-6" /></a>
         </div>
-        <div className="w-full mt-4">
-          <div className="gcse-search"></div>
-        </div>
+
         <button className="mt-auto px-6 py-3 rounded-lg bg-white text-black font-semibold shadow-lg hover:bg-zinc-200 transition-colors w-full">
           Contact Me
         </button>

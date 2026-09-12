@@ -179,11 +179,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Custom Search Engine */}
-        <Script
-          src="https://cse.google.com/cse.js?cx=c3e5033ac47574a79"
-          strategy="afterInteractive"
-        />
+
 
         <SmoothScroll>
           <ClickSpark
