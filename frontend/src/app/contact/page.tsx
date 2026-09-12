@@ -7,6 +7,7 @@ import { Skiper28 } from "@/components/ui/perspective-text-scroll";
 import { Mail, MapPin, Phone, Heart, BrainCircuit } from "lucide-react";
 import Navbar from "@/components/ui/Navbar";
 import MercuryContactForm from "@/components/ui/mercury-contact-form";
+import BorderGlow from "@/components/ui/BorderGlow";
 
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -93,7 +94,7 @@ export default function ContactPage() {
           {/* Footer Bar inside Hero */}
           <div className="absolute bottom-0 left-0 right-0 w-full px-6 md:px-12 py-6 border-t border-white/10 flex flex-col md:flex-row justify-end items-center gap-4 text-sm md:text-base">
             <span className="text-zinc-300 font-medium tracking-widest uppercase text-xs md:text-sm">
-              Bokaro Steel City, India 827010
+              Saharanpur, UP, India
             </span>
             <div className="flex items-center gap-2">
               <span className="text-white font-medium tracking-widest uppercase text-lg md:text-xl">DESIGNER</span>
@@ -123,46 +124,82 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 relative z-10">
             {/* Card 1 */}
-            <div className="group relative overflow-hidden rounded-2xl bg-zinc-900/40 border border-white/5 p-6 backdrop-blur-md hover:bg-zinc-900/60 transition-colors">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#ff5800]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="flex items-center gap-4 relative z-10">
-                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0 text-[#ff5800] border border-[#ff5800]/30 group-hover:scale-110 transition-transform">
-                  <Mail className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-1">Email</h3>
-                  <p className="text-zinc-400 text-sm">hardikyadaven@gmail.com</p>
+            <BorderGlow
+              edgeSensitivity={30}
+              glowColor="40 80 80"
+              backgroundColor="#0a0a0a"
+              borderRadius={16}
+              glowRadius={40}
+              glowIntensity={1.0}
+              coneSpread={25}
+              animated={true}
+              colors={['#ff5800', '#ff8a00', '#ffffff']}
+              className="w-full"
+            >
+              <div className="group relative overflow-hidden rounded-2xl p-6 transition-colors">
+                <div className="flex items-center gap-4 relative z-10">
+                  <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0 text-[#ff5800] border border-[#ff5800]/30 group-hover:scale-110 transition-transform">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">Email</h3>
+                    <p className="text-zinc-400 text-sm">hardikyadaven@gmail.com</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </BorderGlow>
 
             {/* Card 2 */}
-            <div className="group relative overflow-hidden rounded-2xl bg-zinc-900/40 border border-white/5 p-6 backdrop-blur-md hover:bg-zinc-900/60 transition-colors">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#ff5800]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="flex items-center gap-4 relative z-10">
-                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0 text-[#ff5800] border border-[#ff5800]/30 group-hover:scale-110 transition-transform">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-1">Phone</h3>
-                  <p className="text-zinc-400 text-sm">+91 98707 72415</p>
+            <BorderGlow
+              edgeSensitivity={30}
+              glowColor="40 80 80"
+              backgroundColor="#0a0a0a"
+              borderRadius={16}
+              glowRadius={40}
+              glowIntensity={1.0}
+              coneSpread={25}
+              animated={true}
+              colors={['#ff5800', '#ff8a00', '#ffffff']}
+              className="w-full"
+            >
+              <div className="group relative overflow-hidden rounded-2xl p-6 transition-colors">
+                <div className="flex items-center gap-4 relative z-10">
+                  <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0 text-[#ff5800] border border-[#ff5800]/30 group-hover:scale-110 transition-transform">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">Phone</h3>
+                    <p className="text-zinc-400 text-sm">+91 98707 72415</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </BorderGlow>
 
             {/* Card 3 */}
-            <div className="group relative overflow-hidden rounded-2xl bg-zinc-900/40 border border-white/5 p-6 backdrop-blur-md hover:bg-zinc-900/60 transition-colors">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#ff5800]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="flex items-center gap-4 relative z-10">
-                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0 text-[#ff5800] border border-[#ff5800]/30 group-hover:scale-110 transition-transform">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-1">Location</h3>
-                  <p className="text-zinc-400 text-sm">Bokaro Steel City, India</p>
+            <BorderGlow
+              edgeSensitivity={30}
+              glowColor="40 80 80"
+              backgroundColor="#0a0a0a"
+              borderRadius={16}
+              glowRadius={40}
+              glowIntensity={1.0}
+              coneSpread={25}
+              animated={true}
+              colors={['#ff5800', '#ff8a00', '#ffffff']}
+              className="w-full"
+            >
+              <div className="group relative overflow-hidden rounded-2xl p-6 transition-colors">
+                <div className="flex items-center gap-4 relative z-10">
+                  <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0 text-[#ff5800] border border-[#ff5800]/30 group-hover:scale-110 transition-transform">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">Location</h3>
+                    <p className="text-zinc-400 text-sm">Saharanpur, UP, India</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </BorderGlow>
           </div>
         </div>
 

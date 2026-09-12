@@ -4,15 +4,16 @@ import React, { useEffect, useMemo, useRef } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const MercuryContactForm: React.FC = () => {
-    // Generate static random values once per mount to prevent hydration errors
-    const blobsData = useMemo(() => {
-        return Array.from({ length: 5 }).map(() => ({
+    const [blobsData, setBlobsData] = React.useState<any[]>([]);
+
+    useEffect(() => {
+        setBlobsData(Array.from({ length: 5 }).map(() => ({
             size: Math.random() * 150 + 100,
             left: Math.random() * 80 + 10,
             top: Math.random() * 80 + 10,
             animationDelay: Math.random() * -20,
             animationDuration: Math.random() * 15 + 15,
-        }));
+        })));
     }, []);
 
     const blobRefs = useRef<(HTMLDivElement | null)[]>([]);
