@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const categories = ["Web Development", "AI Solutions", "Consulting", "General"];
+const categories = ["Web Development", "AI Solutions", "Consulting", "Beginner Coding"];
 
 const faqContent: Record<string, { question: string; answer: string }[]> = {
   "Web Development": [
@@ -54,14 +54,18 @@ const faqContent: Record<string, { question: string; answer: string }[]> = {
       answer: "You can reach out via the Contact page. We'll schedule a discovery call to discuss your business needs, technical requirements, and project timeline."
     }
   ],
-  "General": [
+  "Beginner Coding": [
     {
-      question: "Where are you based?",
-      answer: "I am based in Saharanpur, Uttar Pradesh, India, but I work remotely with clients worldwide."
+      question: "Which programming language should I learn first in 2026?",
+      answer: "JavaScript is highly recommended because it runs in every browser and powers both frontend and backend development. Python is a great alternative if you are interested in data or AI."
     },
     {
-      question: "Do you offer ongoing maintenance?",
-      answer: "Yes, I provide ongoing maintenance, monitoring, and updates to ensure your digital products remain secure, fast, and up-to-date."
+      question: "Do I need a computer science degree to start coding?",
+      answer: "No. A large share of working developers are self-taught or came through bootcamps. What matters most to employers is what you can build and demonstrate."
+    },
+    {
+      question: "Should I learn a framework like React right away?",
+      answer: "No. Learn plain JavaScript first. Frameworks make much more sense once you understand the core problems they are solving."
     }
   ]
 };

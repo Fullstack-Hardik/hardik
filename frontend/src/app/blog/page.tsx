@@ -5,7 +5,8 @@ import { Outfit } from "next/font/google";
 import Navbar from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
 import { ScrollFlyIn } from "@/components/ui/hero-section-3";
-import { Component as BlogPosts } from "@/components/ui/blog-posts";
+import { ColorChangeCard } from "@/components/ui/color-change-card";
+import { getAllBlogs } from "@/lib/blogs";
 
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -14,8 +15,8 @@ export const metadata: Metadata = {
   description: "Read the latest engineering insights, web development tutorials, and programming guides by Hardik Yadav."
 };
 
-export default function BlogPage() {
-  // Using defaults for drift items
+export default async function BlogPage() {
+  const blogs = getAllBlogs();
 
   return (
     <main className={`w-full relative min-h-screen bg-black text-white ${premiumFont.className}`}>
@@ -37,43 +38,25 @@ export default function BlogPage() {
         </ScrollFlyIn>
       </div>
 
-      <div className="w-full bg-black">
-        <BlogPosts
-          title="Our Most Popular Articles of 2026!"
-          description="Discover the most engaging content from our amazing community of developers and designers"
-          backgroundLabel="BLOG"
-          backgroundPosition="left"
-          posts={[
-            {
-              id: 1,
-              title: "What is Coding? A Complete Guide to Programming",
-              category: "Computer Science",
-              imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop",
-              views: 3180,
-              readTime: 10,
-              rating: 5
-            },
-            {
-              id: 2,
-              title: "The Rise of AI in Modern Web Development",
-              category: "Artificial Intelligence",
-              imageUrl: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=800&auto=format&fit=crop",
-              views: 2456,
-              readTime: 8,
-              rating: 5
-            },
-            {
-              id: 3,
-              title: "Choosing a Software Company: Saharanpur vs Delhi NCR",
-              category: "Business",
-              imageUrl: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=800&auto=format&fit=crop",
-              views: 1987,
-              readTime: 5,
-              rating: 4
-            }
-          ]}
-          className="mb-16"
-        />
+      <div className="w-full bg-black py-16">
+        <div className="max-w-6xl mx-auto px-4 md:px-8">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-5xl font-bold mb-4">Latest Articles</h3>
+            <p className="text-zinc-400">Discover insights from the world of development, engineering, and AI.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            {blogs.map((blog, idx) => (
+              <ColorChangeCard
+                key={idx}
+                heading={blog.metadata.category}
+                description={blog.metadata.title}
+                imgSrc={blog.metadata.featuredImage.startsWith('http') ? blog.metadata.featuredImage : `https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop`}
+                href={blog.metadata.slug}
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
       <Footer />
