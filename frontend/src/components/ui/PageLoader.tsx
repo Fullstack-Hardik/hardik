@@ -8,14 +8,19 @@ import { AnimatePresence, motion } from "framer-motion";
 export const PageLoader = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false); // Default to false so no loader on first visit
+  const isFirstMount = React.useRef(true);
 
   useEffect(() => {
-    setIsLoading(true);
+    if (isFirstMount.current) {
+      isFirstMount.current = false;
+      return;
+    }
 
+    setIsLoading(true);
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500); // 1.5s delay to ensure the page renders
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, [pathname, searchParams]);
