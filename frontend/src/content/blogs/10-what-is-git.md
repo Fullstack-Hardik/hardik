@@ -1,8 +1,8 @@
 ---
-Title: Git and GitHub for Beginners: A Complete Guide
+Title: "Git and GitHub for Beginners: A Complete Guide"
 Slug: /blog/what-is-git
-Meta Title: Git and GitHub for Beginners: A Complete Guide
-Meta Description: Learn what Git and GitHub are, how they differ, and the essential commands you need to manage code and collaborate on projects.
+Meta Title: "Git and GitHub for Beginners: A Complete Guide"
+Meta Description: "Learn what Git and GitHub are, how they differ, and the essential commands you need to manage code and collaborate on projects."
 Primary Keyword: what is git
 Secondary Keywords: git vs github, git for beginners, how to use git, essential git commands
 Search Intent: Informational

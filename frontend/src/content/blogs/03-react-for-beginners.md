@@ -1,8 +1,8 @@
 ---
-Title: React for Beginners: A Practical Guide
+Title: "React for Beginners: A Practical Guide"
 Slug: /blog/react-for-beginners
-Meta Title: React for Beginners: A Practical Guide (2026)
-Meta Description: Learn React from scratch — components, props, state, and hooks — with real code examples and a clear path to building your first app.
+Meta Title: "React for Beginners: A Practical Guide (2026)"
+Meta Description: "Learn React from scratch — components, props, state, and hooks — with real code examples and a clear path to building your first app."
 Primary Keyword: react for beginners
 Secondary Keywords: learn react, react basics, react tutorial, react hooks explained
 Search Intent: Informational

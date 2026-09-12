@@ -1,8 +1,8 @@
 ---
-Title: Next.js Explained: The Complete Guide for React Developers
+Title: "Next.js Explained: The Complete Guide for React Developers"
 Slug: /blog/what-is-nextjs
-Meta Title: What Is Next.js? A Complete Guide for React Developers
-Meta Description: Learn what Next.js is, how it extends React with routing and server-side rendering, and when you should reach for it over plain React.
+Meta Title: "What Is Next.js? A Complete Guide for React Developers"
+Meta Description: "Learn what Next.js is, how it extends React with routing and server-side rendering, and when you should reach for it over plain React."
 Primary Keyword: what is next.js
 Secondary Keywords: next.js explained, next.js vs react, next.js app router, server-side rendering
 Search Intent: Informational

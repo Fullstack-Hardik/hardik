@@ -1,8 +1,8 @@
 ---
-Title: How to Start Coding in 2026: A Complete Beginner's Roadmap
+Title: "How to Start Coding in 2026: A Complete Beginner's Roadmap"
 Slug: /blog/how-to-start-coding
-Meta Title: How to Start Coding in 2026: A Beginner's Roadmap
-Meta Description: A practical, no-fluff roadmap for how to start coding in 2026 — what to learn first, which language to pick, and how to build real projects fast.
+Meta Title: "How to Start Coding in 2026: A Beginner's Roadmap"
+Meta Description: "A practical, no-fluff roadmap for how to start coding in 2026 — what to learn first, which language to pick, and how to build real projects fast."
 Primary Keyword: how to start coding
 Secondary Keywords: learn to code, coding for beginners, how to learn programming, best way to start coding
 Search Intent: Informational

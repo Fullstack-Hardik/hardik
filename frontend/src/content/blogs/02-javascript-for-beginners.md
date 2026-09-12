@@ -1,8 +1,8 @@
 ---
-Title: The Complete JavaScript Guide for Beginners
+Title: "The Complete JavaScript Guide for Beginners"
 Slug: /blog/javascript-for-beginners
-Meta Title: JavaScript for Beginners: A Complete Practical Guide
-Meta Description: Learn JavaScript from scratch — variables, functions, arrays, objects, and async code — with practical examples and a clear path to your first project.
+Meta Title: "JavaScript for Beginners: A Complete Practical Guide"
+Meta Description: "Learn JavaScript from scratch — variables, functions, arrays, objects, and async code — with practical examples and a clear path to your first project."
 Primary Keyword: javascript for beginners
 Secondary Keywords: learn javascript, javascript basics, javascript tutorial, what is javascript used for
 Search Intent: Informational

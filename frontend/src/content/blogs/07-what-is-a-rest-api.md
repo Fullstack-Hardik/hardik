@@ -1,8 +1,8 @@
 ---
-Title: REST APIs Explained: A Complete Guide for Developers
+Title: "REST APIs Explained: A Complete Guide for Developers"
 Slug: /blog/what-is-a-rest-api
-Meta Title: What Is a REST API? A Complete Guide for Developers
-Meta Description: Learn what a REST API is, how HTTP methods and status codes work, and how to design clean, secure APIs with practical examples.
+Meta Title: "What Is a REST API? A Complete Guide for Developers"
+Meta Description: "Learn what a REST API is, how HTTP methods and status codes work, and how to design clean, secure APIs with practical examples."
 Primary Keyword: what is a rest api
 Secondary Keywords: rest api explained, rest api tutorial, how does an api work, rest api example
 Search Intent: Informational

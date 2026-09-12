@@ -1,8 +1,8 @@
 ---
-Title: MongoDB for Beginners: A Complete Guide
+Title: "MongoDB for Beginners: A Complete Guide"
 Slug: /blog/mongodb-for-beginners
-Meta Title: MongoDB for Beginners: A Complete Practical Guide
-Meta Description: Learn MongoDB from scratch — documents, collections, schema design, and Mongoose — with practical examples for real applications.
+Meta Title: "MongoDB for Beginners: A Complete Practical Guide"
+Meta Description: "Learn MongoDB from scratch — documents, collections, schema design, and Mongoose — with practical examples for real applications."
 Primary Keyword: mongodb for beginners
 Secondary Keywords: what is mongodb, mongodb tutorial, mongodb vs mysql, learn mongodb
 Search Intent: Informational

@@ -1,8 +1,8 @@
 ---
-Title: Node.js Backend Development: A Practical Guide
+Title: "Node.js Backend Development: A Practical Guide"
 Slug: /blog/what-is-nodejs
-Meta Title: What Is Node.js? A Practical Backend Development Guide
-Meta Description: Learn what Node.js is, how it works, and how to use it with Express to build real backend APIs — with practical code examples.
+Meta Title: "What Is Node.js? A Practical Backend Development Guide"
+Meta Description: "Learn what Node.js is, how it works, and how to use it with Express to build real backend APIs — with practical code examples."
 Primary Keyword: what is node.js
 Secondary Keywords: node.js explained, node.js for beginners, node.js backend, what is node.js used for
 Search Intent: Informational

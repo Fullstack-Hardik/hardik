@@ -1,8 +1,8 @@
 ---
-Title: How to Become a Full-Stack Developer: A Step-by-Step Guide
+Title: "How to Become a Full-Stack Developer: A Step-by-Step Guide"
 Slug: /blog/how-to-become-a-full-stack-developer
-Meta Title: How to Become a Full-Stack Developer: Step-by-Step Guide
-Meta Description: A realistic, step-by-step roadmap to becoming a full-stack developer — what to learn, in what order, and how to build a portfolio that gets noticed.
+Meta Title: "How to Become a Full-Stack Developer: Step-by-Step Guide"
+Meta Description: "A realistic, step-by-step roadmap to becoming a full-stack developer — what to learn, in what order, and how to build a portfolio that gets noticed."
 Primary Keyword: how to become a full-stack developer
 Secondary Keywords: full-stack developer roadmap, full-stack developer skills, become a full-stack developer
 Search Intent: Informational

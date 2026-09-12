@@ -1,8 +1,8 @@
 ---
-Title: Web Security and Authentication: A Developer's Guide
+Title: "Web Security and Authentication: A Developer's Guide"
 Slug: /blog/web-security-best-practices
-Meta Title: Web Security Best Practices: A Developer's Guide
-Meta Description: Learn the core web security concepts every developer needs — authentication, JWT, password hashing, and common vulnerabilities — with practical examples.
+Meta Title: "Web Security Best Practices: A Developer's Guide"
+Meta Description: "Learn the core web security concepts every developer needs — authentication, JWT, password hashing, and common vulnerabilities — with practical examples."
 Primary Keyword: web security best practices
 Secondary Keywords: web application security, authentication best practices, secure coding practices, api security
 Search Intent: Informational
