@@ -6,7 +6,7 @@ import LogoLoop from "@/components/ui/LogoLoop";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiPython, SiNodedotjs, SiFigma, SiGooglecloud, SiFirebase } from "react-icons/si";
 import { Outfit } from "next/font/google";
 
-const HorizontalFeatureReveal = dynamic(() => import("@/components/ui/horizontal-feature-reveal").then(mod => mod.HorizontalFeatureReveal));
+import { HorizontalFeatureReveal } from "@/components/ui/horizontal-feature-reveal";
 const MagicBento = dynamic(() => import("@/components/ui/MagicBento"));
 const FlowArt = dynamic(() => import("@/components/ui/story-scroll"));
 const FlowSection = dynamic(() => import("@/components/ui/story-scroll").then(mod => mod.FlowSection));

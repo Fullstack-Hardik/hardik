@@ -6,6 +6,7 @@ import { Footer } from "@/components/ui/Footer";
 import { Skiper28 } from "@/components/ui/perspective-text-scroll";
 import { Mail, MapPin, Phone, Heart, BrainCircuit } from "lucide-react";
 import Navbar from "@/components/ui/Navbar";
+import MercuryContactForm from "@/components/ui/mercury-contact-form";
 
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -165,66 +166,9 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Contact Form (Redesigned) */}
-        <div className="relative group perspective-1000">
-          <div className="absolute -inset-0.5 bg-gradient-to-br from-[#ff5800] via-zinc-800 to-transparent rounded-[2rem] blur opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-          <div className="relative bg-[#0a0a0a] p-8 md:p-12 rounded-[2rem] border border-white/10 shadow-2xl h-full flex flex-col justify-center">
-            
-            <div className="mb-10">
-              <h3 className="text-3xl font-semibold mb-2">Send a Message</h3>
-              <p className="text-zinc-500 text-sm">I'll get back to you in 1-2 business days.</p>
-            </div>
-
-            <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-6">
-              <input type="hidden" name="access_key" value="ec747eb6-7916-4048-8c19-df2450da63f2" />
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex flex-col gap-2 relative">
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name"
-                    required
-                    placeholder="John Doe" 
-                    className="peer w-full bg-zinc-900/50 border-b-2 border-white/10 px-4 py-4 text-white placeholder-transparent focus:outline-none focus:border-[#ff5800] transition-all focus:bg-zinc-900 rounded-t-lg"
-                  />
-                  <label htmlFor="name" className="absolute left-4 top-1 text-[10px] uppercase tracking-wider font-bold text-zinc-500 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-placeholder-shown:font-normal peer-focus:top-1 peer-focus:text-[10px] peer-focus:font-bold peer-focus:text-[#ff5800] cursor-text">Full Name</label>
-                </div>
-                
-                <div className="flex flex-col gap-2 relative">
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    required
-                    placeholder="john@example.com" 
-                    className="peer w-full bg-zinc-900/50 border-b-2 border-white/10 px-4 py-4 text-white placeholder-transparent focus:outline-none focus:border-[#ff5800] transition-all focus:bg-zinc-900 rounded-t-lg"
-                  />
-                  <label htmlFor="email" className="absolute left-4 top-1 text-[10px] uppercase tracking-wider font-bold text-zinc-500 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-placeholder-shown:font-normal peer-focus:top-1 peer-focus:text-[10px] peer-focus:font-bold peer-focus:text-[#ff5800] cursor-text">Email Address</label>
-                </div>
-              </div>
-              
-              <div className="flex flex-col gap-2 relative mt-2">
-                <textarea 
-                  id="message" 
-                  name="message"
-                  required
-                  placeholder="How can we help you?" 
-                  rows={4}
-                  className="peer w-full bg-zinc-900/50 border-b-2 border-white/10 px-4 py-6 text-white placeholder-transparent focus:outline-none focus:border-[#ff5800] transition-all focus:bg-zinc-900 rounded-t-lg resize-none"
-                ></textarea>
-                <label htmlFor="message" className="absolute left-4 top-2 text-[10px] uppercase tracking-wider font-bold text-zinc-500 transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-sm peer-placeholder-shown:font-normal peer-focus:top-2 peer-focus:text-[10px] peer-focus:font-bold peer-focus:text-[#ff5800] cursor-text">Your Message</label>
-              </div>
-              
-              <button type="submit" className="w-full mt-6 py-4 rounded-xl bg-white text-black font-bold text-lg hover:bg-[#ff5800] hover:text-white transition-colors duration-300 flex items-center justify-center gap-3 group">
-                Send Request
-                <div className="w-6 h-6 rounded-full bg-black/10 group-hover:bg-white/20 flex items-center justify-center transform group-hover:translate-x-2 transition-all">
-                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 7H11M11 7L7 3M11 7L7 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-              </button>
-            </form>
-          </div>
+        {/* Contact Form (Redesigned with Liquid Animation) */}
+        <div className="relative w-full h-full flex flex-col justify-center min-h-[500px]">
+          <MercuryContactForm />
         </div>
       </section>
 

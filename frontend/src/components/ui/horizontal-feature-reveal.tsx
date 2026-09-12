@@ -69,7 +69,7 @@ export function HorizontalFeatureReveal() {
         <motion.div style={{ x }} className="flex w-[500vw]">
           {FEATURES.map((feature, i) => (
             <div key={i} className="w-screen flex-shrink-0 flex items-center justify-center px-4 md:px-20">
-              <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-10 md:gap-20">
+              <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-10 md:gap-20 pt-28 lg:pt-0">
                 <div className="flex-1 space-y-6 md:space-y-8 z-10">
                   <span className="text-[#ff5800] text-3xl md:text-5xl font-extrabold tracking-widest opacity-80">{feature.no}</span>
                   <h2 className="text-5xl md:text-8xl font-extrabold uppercase tracking-tighter leading-none">
