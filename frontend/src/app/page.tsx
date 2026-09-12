@@ -18,20 +18,7 @@ const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "
 
 export default function Home() {
 
-  useEffect(() => {
-    // Setup animation fallback
-    const fallbackTimeout = setTimeout(() => {
-      document.documentElement.classList.remove('motion-pending');
-      document.documentElement.classList.add('motion-animating');
-    }, 3500);
 
-    requestAnimationFrame(() => {
-      document.documentElement.classList.remove('motion-pending');
-      document.documentElement.classList.add('motion-animating');
-    });
-
-    return () => clearTimeout(fallbackTimeout);
-  }, []);
 
   const techLogos = [
     { node: <SiReact className="text-zinc-500 hover:text-[#61DAFB] transition-colors text-3xl" />, title: "React" },
@@ -111,6 +98,7 @@ export default function Home() {
           disablePictureInPicture 
           aria-hidden="true"
           preload="auto"
+          poster="/og-image.png"
           style={{ backgroundColor: '#050505' }}
         >
           <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260808_064556_051587f1-74a1-4336-8c05-4dde3594ed05.mp4" type="video/mp4" />

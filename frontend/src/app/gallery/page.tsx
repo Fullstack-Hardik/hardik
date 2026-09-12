@@ -11,20 +11,7 @@ import Navbar from "@/components/ui/Navbar";
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
 export default function GalleryPage() {
-  useEffect(() => {
-    // Setup animation fallback
-    const fallbackTimeout = setTimeout(() => {
-      document.documentElement.classList.remove('motion-pending');
-      document.documentElement.classList.add('motion-animating');
-    }, 3500);
 
-    requestAnimationFrame(() => {
-      document.documentElement.classList.remove('motion-pending');
-      document.documentElement.classList.add('motion-animating');
-    });
-
-    return () => clearTimeout(fallbackTimeout);
-  }, []);
 
   return (
     <main className={`w-full relative min-h-screen bg-black text-white ${premiumFont.className}`}>

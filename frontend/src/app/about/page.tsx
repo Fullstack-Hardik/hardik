@@ -15,20 +15,7 @@ const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "
 
 export default function AboutPage() {
 
-  useEffect(() => {
-    // Setup animation fallback
-    const fallbackTimeout = setTimeout(() => {
-      document.documentElement.classList.remove('motion-pending');
-      document.documentElement.classList.add('motion-animating');
-    }, 3500);
 
-    requestAnimationFrame(() => {
-      document.documentElement.classList.remove('motion-pending');
-      document.documentElement.classList.add('motion-animating');
-    });
-
-    return () => clearTimeout(fallbackTimeout);
-  }, []);
 
   return (
     <main className={`w-full relative min-h-screen bg-black text-white ${premiumFont.className}`}>

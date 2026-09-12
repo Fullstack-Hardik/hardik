@@ -28,8 +28,8 @@ export const TypingDemo = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full max-w-[700px] px-4 flex flex-col items-center justify-center my-12" style={{ perspective: "1500px" }}>
-      
+    <div ref={containerRef} className="w-full max-w-[700px] px-4 flex flex-col items-center justify-center my-12 overflow-hidden" style={{ perspective: "1500px" }}>
+      <div className="w-full flex flex-col items-center justify-center min-w-[700px] scale-[0.5] sm:scale-[0.65] md:scale-100 origin-center">
       {/* Screen / Monitor Area */}
       <motion.div 
         style={{ rotateX: screenRotate, transformOrigin: "bottom center" }}
@@ -51,6 +51,7 @@ export const TypingDemo = () => {
       
       {/* Table Shadow */}
       <div className="w-full max-w-[700px] h-8 bg-black/50 blur-xl rounded-[100%] mt-8" />
+      </div>
     </div>
   );
 };

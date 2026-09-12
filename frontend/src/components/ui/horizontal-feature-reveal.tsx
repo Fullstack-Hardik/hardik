@@ -60,16 +60,16 @@ export function HorizontalFeatureReveal() {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[500vh] bg-black text-white" id="services">
+    <section ref={targetRef} className="relative h-[300vh] md:h-[500vh] bg-black text-white" id="services">
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
-        <div className="absolute top-10 left-10 md:top-20 md:left-20 z-10">
+        <div className="absolute top-24 left-6 md:top-20 md:left-20 z-10">
           <h1 className="text-2xl md:text-4xl font-bold tracking-tighter uppercase">Our Services</h1>
           <div className="h-1 w-20 bg-[#ff5800] mt-2" />
         </div>
         <motion.div style={{ x }} className="flex w-[500vw]">
           {FEATURES.map((feature, i) => (
-            <div key={i} className="w-screen flex-shrink-0 flex items-center justify-center px-4 md:px-20">
-              <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-10 md:gap-20 pt-28 lg:pt-0">
+            <div key={i} className="w-screen flex-shrink-0 flex items-center justify-center px-6 md:px-20">
+              <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-6 md:gap-20 pt-40 md:pt-0">
                 <div className="flex-1 space-y-6 md:space-y-8 z-10">
                   <span className="text-[#ff5800] text-3xl md:text-5xl font-extrabold tracking-widest opacity-80">{feature.no}</span>
                   <h2 className="text-5xl md:text-8xl font-extrabold uppercase tracking-tighter leading-none">

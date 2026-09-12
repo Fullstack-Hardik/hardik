@@ -148,7 +148,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="motion-pending">
+    <html lang="en">
       <head>
         <link rel="canonical" href={SITE_URL} />
         <meta name="theme-color" content="#000000" />
