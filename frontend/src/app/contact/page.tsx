@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { Outfit } from "next/font/google";
 import { Footer } from "@/components/ui/Footer";
 import { Skiper28 } from "@/components/ui/perspective-text-scroll";

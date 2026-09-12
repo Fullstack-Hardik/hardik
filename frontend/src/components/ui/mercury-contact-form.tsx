@@ -263,7 +263,7 @@ const MercuryContactForm: React.FC = () => {
                 {blobsData.map((data, index) => (
                     <div
                         key={index}
-                        ref={(el) => (blobRefs.current[index] = el)}
+                        ref={(el) => { blobRefs.current[index] = el; }}
                         className="blob"
                         style={{
                             width: `${data.size}px`,

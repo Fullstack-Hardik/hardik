@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { Outfit } from "next/font/google";
 import { Footer } from "@/components/ui/Footer";
 import { Skiper30 } from "@/components/ui/parallax-gallery";

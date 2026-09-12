@@ -61,7 +61,7 @@ export function HorizontalFeatureReveal() {
   const x = useSpring(xTransform, { stiffness: 400, damping: 90 });
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] md:h-[500vh] bg-black text-white" id="services">
+    <section ref={targetRef} className="relative h-[250vh] md:h-[500vh] bg-black text-white" id="services">
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <div className="absolute top-24 left-6 md:top-20 md:left-20 z-10">
           <h1 className="text-2xl md:text-4xl font-bold tracking-tighter uppercase">Our Services</h1>
@@ -72,17 +72,17 @@ export function HorizontalFeatureReveal() {
             <div key={i} className="w-screen flex-shrink-0 flex items-center justify-center px-6 md:px-20">
               <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-6 md:gap-20 pt-40 md:pt-0">
                 <div className="flex-1 space-y-6 md:space-y-8 z-10">
-                  <span className="text-[#ff5800] text-3xl md:text-5xl font-extrabold tracking-widest opacity-80">{feature.no}</span>
-                  <h2 className="text-5xl md:text-8xl font-extrabold uppercase tracking-tighter leading-none">
+                  <span className="text-[#ff5800] text-2xl md:text-5xl font-extrabold tracking-widest opacity-80">{feature.no}</span>
+                  <h2 className="text-3xl md:text-8xl font-extrabold uppercase tracking-tighter leading-none">
                     {feature.title}
                   </h2>
                   {feature.paragraphs?.map((p, j) => (
-                    <p key={j} className="text-zinc-400 text-lg md:text-2xl max-w-xl leading-relaxed">
+                    <p key={j} className="text-zinc-400 text-base md:text-2xl max-w-xl leading-relaxed">
                       {p}
                     </p>
                   ))}
                 </div>
-                <div className="w-full md:w-[400px] flex-shrink-0 relative h-[60vh] md:h-[80vh] rounded-[2.5rem] overflow-hidden shadow-[inset_0_0_40px_rgba(0,0,0,0.8),_15px_15px_0px_rgba(255,88,0,1)] border-2 border-white/20 bg-zinc-900">
+                <div className="w-full md:w-[400px] flex-shrink-0 relative h-[40vh] md:h-[80vh] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-[inset_0_0_40px_rgba(0,0,0,0.8),_10px_10px_0px_rgba(255,88,0,1)] md:shadow-[inset_0_0_40px_rgba(0,0,0,0.8),_15px_15px_0px_rgba(255,88,0,1)] border-2 border-white/20 bg-zinc-900">
                   <div className="absolute inset-0 bg-[#ff5800]/20 mix-blend-overlay z-10 pointer-events-none" />
                   <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,1)] z-10 pointer-events-none" />
                   <Image

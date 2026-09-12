@@ -7,9 +7,7 @@ export const Component = ({ simulatedKey }: { simulatedKey?: string | null }) =>
   const [pressedKey, setPressedKey] = useState<string | null>(null)
   const [capsLock, setCapsLock] = useState(false)
   const [shift, setShift] = useState(false)
-  const [windowWidth, setWindowWidth] = useState<number>(
-    typeof window !== "undefined" ? window.innerWidth : 1200
-  )
+  const [windowWidth, setWindowWidth] = useState<number>(1200)
 
   useEffect(() => {
     if (simulatedKey) {
@@ -35,6 +33,7 @@ export const Component = ({ simulatedKey }: { simulatedKey?: string | null }) =>
       setWindowWidth(window.innerWidth)
     }
 
+    handleResize() // Set real value on mount
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
   }, [])

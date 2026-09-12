@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { CodeScreen } from "./CodeScreen";
 import { Component as Keyboard } from "./keyboard";
 
@@ -21,18 +21,17 @@ export const TypingDemo = () => {
 
   const handleCharTyped = useCallback((char: string) => {
     setActiveKey(char);
-    // Auto reset after short delay if next char doesn't come immediately
     setTimeout(() => {
       setActiveKey(null);
     }, 100);
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full max-w-[700px] px-4 flex flex-col items-center justify-center my-12 overflow-hidden">
-      <div 
-        className="w-full flex flex-col items-center justify-center min-w-[700px] scale-[0.5] sm:scale-[0.65] md:scale-100 origin-center"
-        style={{ perspective: "1500px" }}
-      >
+    <div 
+      ref={containerRef} 
+      className="w-full max-w-[700px] px-4 flex flex-col items-center justify-center my-12"
+      style={{ perspective: "1500px" }}
+    >
       {/* Screen / Monitor Area */}
       <motion.div 
         style={{ rotateX: screenRotate, transformOrigin: "bottom center" }}
@@ -54,7 +53,6 @@ export const TypingDemo = () => {
       
       {/* Table Shadow */}
       <div className="w-full max-w-[700px] h-8 bg-black/50 blur-xl rounded-[100%] mt-8" />
-      </div>
     </div>
   );
 };

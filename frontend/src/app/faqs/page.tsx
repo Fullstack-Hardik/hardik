@@ -154,7 +154,7 @@ export default function FAQsPage() {
           >
             {/* CONTENT INSIDE THE PORTAL */}
             <div className="w-full max-w-5xl mx-auto px-6 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col items-center min-h-screen relative z-10 pointer-events-auto">
-              <div className="w-full flex justify-center -ml-4 md:ml-0 mb-20">
+              <div className="w-full flex justify-center mb-20">
                 <FaqSection data={faqData} />
               </div>
               

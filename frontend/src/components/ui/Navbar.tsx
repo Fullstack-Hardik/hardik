@@ -120,28 +120,13 @@ export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
             <a href="https://www.linkedin.com/in/hardik-yadav-682016301/" target="_blank" className="hover:text-white transition-colors" aria-label="LinkedIn"><FaLinkedin className="w-6 h-6" /></a>
         </div>
 
-        <SpecularButton
-          size="md"
-          radius={8}
-          tint="#ffffff"
-          tintOpacity={0}
-          blur={0}
-          textColor="#000000"
-          lineColor="#000000"
-          baseColor="#525252"
-          intensity={1}
-          shineSize={10}
-          shineFade={40}
-          thickness={1}
-          speed={0.35}
-          followMouse
-          proximity={250}
-          autoAnimate={false}
-          className="mt-auto w-full !bg-white"
-          onClick={() => window.location.href = '/contact'}
+        <a
+          href="/contact"
+          className="mt-auto w-full px-6 py-3 rounded-lg bg-white text-black font-semibold shadow-lg hover:bg-zinc-200 transition-colors text-center block"
+          onClick={() => setMenuOpen(false)}
         >
           Contact Me
-        </SpecularButton>
+        </a>
       </div>
     </>
   );

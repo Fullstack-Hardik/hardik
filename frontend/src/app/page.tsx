@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import dynamic from "next/dynamic";
 import LogoLoop from "@/components/ui/LogoLoop";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiPython, SiNodedotjs, SiFigma, SiGooglecloud, SiFirebase } from "react-icons/si";
@@ -18,8 +18,6 @@ const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "
 
 export default function Home() {
 
-
-
   const techLogos = [
     { node: <SiReact className="text-zinc-500 hover:text-[#61DAFB] transition-colors text-3xl" />, title: "React" },
     { node: <SiNextdotjs className="text-zinc-500 hover:text-white transition-colors text-3xl" />, title: "Next.js" },
@@ -30,58 +28,6 @@ export default function Home() {
     { node: <SiFigma className="text-zinc-500 hover:text-[#F24E1E] transition-colors text-3xl" />, title: "Figma" },
     { node: <SiGooglecloud className="text-zinc-500 hover:text-[#4285F4] transition-colors text-3xl" />, title: "Google Cloud" },
     { node: <SiFirebase className="text-zinc-500 hover:text-[#FFCA28] transition-colors text-3xl" />, title: "Firebase" },
-  ];
-
-  const servicesData = [
-    {
-        id: 1,
-        title: "Website Development",
-        description: "Robust, modern website development customized to meet your exact business needs and scale with your growth.",
-        imageUrl: '/services/website_dev.png',
-        reverse: false
-    },
-    {
-        id: 2,
-        title: "Graphic Designing",
-        description: "Creative graphic designing that stands out, capturing your brand identity through stunning visual experiences.",
-        imageUrl: '/services/graphic_design.png',
-        reverse: true
-    },
-    {
-        id: 3,
-        title: "SEO & Marketing",
-        description: "Data-driven SEO and digital marketing strategies designed to boost your reach and convert leads into loyal customers.",
-        imageUrl: '/services/digital_marketing.png',
-        reverse: false
-    },
-    {
-        id: 4,
-        title: "Deployment Solutions",
-        description: "Seamless deployment, hosting, and continuous integration solutions ensuring maximum uptime and performance.",
-        imageUrl: '/services/deployment_design.png',
-        reverse: true
-    },
-    {
-        id: 5,
-        title: "UI/UX Web Designing",
-        description: "Beautiful, intuitive web designing tailored specifically to optimize user experience and engagement.",
-        imageUrl: '/services/web_design.png',
-        reverse: false
-    },
-    {
-        id: 6,
-        title: "System Architecture",
-        description: "Scalable system designing and robust cloud architecture to handle high-traffic, complex applications.",
-        imageUrl: '/services/system_architecture.png',
-        reverse: true
-    },
-    {
-        id: 7,
-        title: "Teaching Coding",
-        description: "Expert mentorship and teaching coding to empower individuals and teams with cutting-edge programming skills.",
-        imageUrl: '/services/teaching_coding.png',
-        reverse: false
-    }
   ];
 
   return (

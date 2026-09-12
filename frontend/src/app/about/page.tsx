@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { Outfit } from "next/font/google";
 import Link from "next/link";
 import { Coffee } from "lucide-react";
