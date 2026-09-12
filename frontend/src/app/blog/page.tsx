@@ -1,14 +1,18 @@
-"use client";
 
+import type { Metadata } from 'next';
 import React from "react";
 import { Outfit } from "next/font/google";
 import Navbar from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
 import { ScrollFlyIn } from "@/components/ui/hero-section-3";
 import { Component as BlogPosts } from "@/components/ui/blog-posts";
-import ClientFeedback from "@/components/ui/testimonial";
 
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
+
+export const metadata: Metadata = {
+  title: "Blog | Hardik Yadav",
+  description: "Read the latest engineering insights, web development tutorials, and programming guides by Hardik Yadav."
+};
 
 export default function BlogPage() {
   // Using defaults for drift items
@@ -71,8 +75,6 @@ export default function BlogPage() {
           className="mb-16"
         />
       </div>
-
-      <ClientFeedback />
 
       <Footer />
     </main>

@@ -31,7 +31,7 @@ const projects = [
     title2: "Platform",
     description: "A comprehensive event and HR management dashboard with real-time analytics and employee tracking.",
     imageSrc: "/proj_event.png",
-    linkTo: "#",
+    linkTo: "https://github.com/fullstack-hardik",
     index: "03",
     label: "HR & Events"
   },
@@ -40,7 +40,7 @@ const projects = [
     title2: "Hub",
     description: "A centralized task management and team collaboration hub with kanban boards and workflow automation.",
     imageSrc: "/proj_task.png",
-    linkTo: "#",
+    linkTo: "https://github.com/fullstack-hardik",
     index: "04",
     label: "Productivity"
   },
@@ -49,7 +49,7 @@ const projects = [
     title2: "Updates",
     description: "A modern tech blog and news portal featuring seamless reading experiences and content discovery.",
     imageSrc: "/proj_blog.png",
-    linkTo: "#",
+    linkTo: "https://github.com/fullstack-hardik",
     index: "05",
     label: "Publishing"
   },
@@ -58,7 +58,7 @@ const projects = [
     title2: "Digital 360",
     description: "An immersive virtual tour agency platform showcasing 3D spatial mapping and interactive property views.",
     imageSrc: "/proj_tour.png",
-    linkTo: "#",
+    linkTo: "https://github.com/fullstack-hardik",
     index: "06",
     label: "Virtual Reality"
   },
@@ -67,7 +67,7 @@ const projects = [
     title2: "Traders",
     description: "A sophisticated corporate portfolio and trading platform with real-time market integrations.",
     imageSrc: "/proj_business.png",
-    linkTo: "#",
+    linkTo: "https://github.com/fullstack-hardik",
     index: "07",
     label: "Finance"
   },
@@ -76,7 +76,7 @@ const projects = [
     title2: "Kanchan",
     description: "A luxurious e-commerce storefront for premium jewelry with seamless checkout and product visualization.",
     imageSrc: "/proj_jewelry.png",
-    linkTo: "#",
+    linkTo: "https://github.com/fullstack-hardik",
     index: "08",
     label: "E-Commerce"
   }

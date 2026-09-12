@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Outfit } from "next/font/google";
 import Link from "next/link";
 import FaqSection from "@/components/ui/habit-faq-scroller";
+import TabbedFaq from "@/components/ui/TabbedFaq";
 
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "900"] });
 
@@ -57,28 +58,9 @@ const faqData = {
       speed: '25s',
       direction: 'left' as const,
       faqItems: [
-        { id: 'q1', question: faqs[0].question, answer: faqs[0].answer },
-        { id: 'q2', question: faqs[1].question, answer: faqs[1].answer },
-        { id: 'q3', question: faqs[2].question, answer: faqs[2].answer },
-      ]
-    },
-    {
-      id: 'row2',
-      speed: '20s',
-      direction: 'right' as const,
-      faqItems: [
-        { id: 'q4', question: faqs[3].question, answer: faqs[3].answer },
-        { id: 'q5', question: faqs[4].question, answer: faqs[4].answer },
-        { id: 'q6', question: faqs[5].question, answer: faqs[5].answer },
-      ]
-    },
-    {
-      id: 'row3',
-      speed: '30s',
-      direction: 'left' as const,
-      faqItems: [
-        { id: 'q7', question: faqs[6].question, answer: faqs[6].answer },
-        { id: 'q8', question: faqs[7].question, answer: faqs[7].answer },
+        { id: 'q1', question: "Who is Hardik Yadav?", answer: "A full-stack developer & AI builder." },
+        { id: 'q2', question: "What tech stack?", answer: "React, Next.js, Node.js, AI." },
+        { id: 'q3', question: "Location?", answer: "Saharanpur, India." },
       ]
     }
   ]
@@ -171,11 +153,14 @@ export default function FAQsPage() {
             }
           >
             {/* CONTENT INSIDE THE PORTAL */}
-            <div className="w-full max-w-4xl mx-auto px-6 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col items-start min-h-screen relative z-10 pointer-events-auto">
-              <div className="w-full flex justify-center -ml-4 md:ml-0">
+            <div className="w-full max-w-5xl mx-auto px-6 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col items-center min-h-screen relative z-10 pointer-events-auto">
+              <div className="w-full flex justify-center -ml-4 md:ml-0 mb-20">
                 <FaqSection data={faqData} />
               </div>
               
+              <div className="w-full mb-12">
+                <TabbedFaq />
+              </div>
 
               <motion.div 
                 initial={{ opacity: 0, y: 40 }}

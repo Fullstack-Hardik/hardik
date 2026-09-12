@@ -140,10 +140,7 @@ export default function AboutUsSection() {
           variants={itemVariants}
         >
           <p>
-            Hi, I'm Hardik Yadav. My journey into software development wasn't just about learning syntax; it was about understanding how systems interact to create value. I am a Full-Stack Developer and AI Enthusiast based in Saharanpur, India, with a relentless drive for building things that matter.
-          </p>
-          <p>
-            Whether I'm designing an intuitive user interface, optimizing a complex backend database, or experimenting with the latest AI models, my approach remains the same: meticulous planning, clean execution, and continuous iteration. I believe that great software is a blend of hard engineering and empathetic design.
+            Hardik Yadav (HRDK) is a full-stack developer based in Saharanpur, Uttar Pradesh, India, working across React, Next.js, Node.js, and MongoDB. He builds and ships full-stack products including HRDKPen Code IDE and VertexCRM. Find his work on GitHub and LinkedIn.
           </p>
         </motion.div>
 
