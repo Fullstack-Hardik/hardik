@@ -4,6 +4,7 @@ import './globals.css';
 
 import ClickSpark from '@/components/ui/ClickSpark';
 import SmoothScroll from '@/components/ui/SmoothScroll';
+import { PageLoader } from '@/components/ui/PageLoader';
 
 const SITE_URL = 'https://hardikyadav.vercel.app';
 
@@ -182,6 +183,7 @@ export default function RootLayout({
 
 
 
+        <PageLoader />
         <SmoothScroll>
           <ClickSpark
             sparkColor='#fff'
