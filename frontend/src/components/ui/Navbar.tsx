@@ -26,8 +26,8 @@ export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
         className="absolute top-6 left-6 right-6 lg:left-12 lg:right-12 h-12 flex items-center justify-between"
         style={{ zIndex }}
       >
-        <Link href="/" className="flex items-center justify-center w-32 block no-underline z-50 bg-white px-4 py-2 rounded-xl transition-all hover:bg-zinc-200" aria-label="HRDK home">
-          <img src="/logo.svg" alt="HRDK Logo" className="h-8 w-auto" />
+        <Link href="/" className="flex items-center justify-center w-32 block no-underline z-50 bg-white px-2 py-1.5 rounded-xl transition-all hover:bg-zinc-200" aria-label="HRDK home">
+          <img src="/hrdk_logo.jpg" alt="HRDK Logo" className="h-10 w-auto rounded-lg" />
         </Link>
         
         {/* Desktop Navigation */}

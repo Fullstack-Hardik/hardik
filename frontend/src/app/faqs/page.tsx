@@ -181,10 +181,9 @@ export default function FAQsPage() {
                 </div>
               </motion.div>
             </div>
-            
-            <Footer />
           </GlyphPortal>
         </div>
+        <Footer />
       </main>
     </>
   );

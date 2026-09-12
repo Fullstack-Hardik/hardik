@@ -26,15 +26,15 @@ export function Footer() {
           </div>
         </button>
 
-        <div className="w-full flex flex-col md:flex-row justify-between items-center gap-8 pt-8 border-t border-white/10 bg-[#050505]/80 backdrop-blur-sm p-4 rounded-xl">
-          <div className="flex items-center gap-3">
-            <img src="/logo.svg" alt="HRDK Developers Logo" className="h-8 w-auto invert" />
+        <div className="w-full flex flex-col xl:flex-row justify-between items-center gap-8 pt-8 border-t border-white/10 bg-[#050505]/80 backdrop-blur-sm p-4 rounded-xl flex-wrap overflow-hidden">
+          <div className="flex items-center gap-3 flex-shrink-0">
+            <img src="/hrdk_logo.jpg" alt="HRDK Developers Logo" className="h-10 w-auto rounded-lg object-contain" />
             <span className="text-white font-bold text-xl tracking-tight hidden md:block">HRDK Developers</span>
           </div>
           
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-center">
             {/* Page Links */}
-            <div className="flex gap-6 text-sm font-medium text-zinc-400">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm font-medium text-zinc-400">
               <a href="/" className="hover:text-white transition-colors">Home</a>
               <a href="/about" className="hover:text-white transition-colors">About</a>
               <a href="/gallery" className="hover:text-white transition-colors">Gallery</a>
