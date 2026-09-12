@@ -54,7 +54,7 @@ const faqData = {
   rows: [
     {
       id: 'row1',
-      speed: '60s',
+      speed: '25s',
       direction: 'left' as const,
       faqItems: [
         { id: 'q1', question: faqs[0].question, answer: faqs[0].answer },
@@ -64,7 +64,7 @@ const faqData = {
     },
     {
       id: 'row2',
-      speed: '45s',
+      speed: '20s',
       direction: 'right' as const,
       faqItems: [
         { id: 'q4', question: faqs[3].question, answer: faqs[3].answer },
@@ -74,7 +74,7 @@ const faqData = {
     },
     {
       id: 'row3',
-      speed: '70s',
+      speed: '30s',
       direction: 'left' as const,
       faqItems: [
         { id: 'q7', question: faqs[6].question, answer: faqs[6].answer },

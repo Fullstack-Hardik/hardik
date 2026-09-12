@@ -6,9 +6,9 @@ import React from 'react';
  */
 export const FaqCard = ({ question, answer }: { question: string; answer: string }) => {
   return (
-    <div className="flex flex-col items-start gap-4 p-6 bg-white rounded-lg shadow-lg w-96 flex-shrink-0 faq-card">
-      <h3 className="text-xl font-bold text-black faq-title">{question}</h3>
-      <p className="text-lg text-gray-700 faq-answer">{answer}</p>
+    <div className="flex flex-col items-start gap-4 p-6 bg-[#ffffff]/5 backdrop-blur-md border border-white/10 rounded-2xl w-96 flex-shrink-0 faq-card">
+      <h3 className="text-xl font-bold text-white faq-title">{question}</h3>
+      <p className="text-lg text-zinc-400 faq-answer leading-relaxed">{answer}</p>
     </div>
   );
 };
@@ -60,8 +60,8 @@ export interface FaqData {
  */
 const FaqSection = ({ data }: { data: FaqData }) => {
   return (
-    <div className="relative flex flex-col items-center gap-12 p-10 w-full max-w-6xl">
-      <div className="flex flex-col items-center gap-6 text-center z-10 max-w-2xl">
+    <div className="relative flex flex-col items-center gap-12 py-10 w-full md:w-[100vw] md:-ml-[calc(50vw-50%)]">
+      <div className="flex flex-col items-center gap-6 text-center z-10 max-w-2xl px-6">
         <h2
           className="text-5xl font-bold text-white leading-tight"
           style={{ opacity: 0, animation: 'fadeInUp 0.7s ease-out 0.2s forwards' }}
