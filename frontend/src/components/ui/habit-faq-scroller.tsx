@@ -26,12 +26,12 @@ export const HorizontalScroller = ({ children, speed = '40s', direction = 'left'
 
   return (
     <div className="w-full overflow-hidden group relative scroller-mask">
-      <div className={`flex ${animationClass}`} style={style}>
-        <div className="flex items-stretch justify-center flex-shrink-0 gap-8 px-4">
+      <div className={`flex w-max ${animationClass}`} style={style}>
+        <div className="flex items-stretch justify-start flex-shrink-0 gap-4 md:gap-8 px-2 md:px-4">
           {children}
         </div>
         {/* duplicate for seamless loop */}
-        <div className="flex items-stretch justify-center flex-shrink-0 gap-8 px-4" aria-hidden="true">
+        <div className="flex items-stretch justify-start flex-shrink-0 gap-4 md:gap-8 px-2 md:px-4" aria-hidden="true">
           {children}
         </div>
       </div>

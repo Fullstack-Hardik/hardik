@@ -102,7 +102,7 @@ export default function FAQsPage() {
         Removed overflow-hidden and fixed height from main wrapper 
         to allow native window scrolling for touchpads and mobile devices.
       */}
-      <main className="w-full bg-[#050505] selection:bg-[#ff5800] selection:text-white overflow-x-hidden">
+      <main className="w-full bg-[#050505] selection:bg-[#ff5800] selection:text-white overflow-x-clip">
         <div 
           tabIndex={0} 
           role="region" 
