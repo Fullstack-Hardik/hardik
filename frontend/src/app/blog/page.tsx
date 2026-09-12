@@ -42,29 +42,29 @@ export default function BlogPage() {
           posts={[
             {
               id: 1,
-              title: "Building Modern Web Applications with React",
-              category: "Web Development",
+              title: "What is Coding? A Complete Guide to Programming",
+              category: "Computer Science",
               imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop",
-              views: 2180,
-              readTime: 8,
+              views: 3180,
+              readTime: 10,
               rating: 5
             },
             {
               id: 2,
-              title: "Advanced TypeScript Patterns",
-              category: "Programming",
+              title: "The Rise of AI in Modern Web Development",
+              category: "Artificial Intelligence",
               imageUrl: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=800&auto=format&fit=crop",
-              views: 1456,
-              readTime: 12,
-              rating: 4
+              views: 2456,
+              readTime: 8,
+              rating: 5
             },
             {
               id: 3,
-              title: "Design System Best Practices",
-              category: "UI/UX Design",
+              title: "Choosing a Software Company: Saharanpur vs Delhi NCR",
+              category: "Business",
               imageUrl: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=800&auto=format&fit=crop",
-              views: 987,
-              readTime: 6,
+              views: 1987,
+              readTime: 5,
               rating: 4
             }
           ]}

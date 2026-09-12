@@ -15,8 +15,8 @@ const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "
 
 const faqs = [
   {
-    question: "Who is Hardik Yadav?",
-    answer: "Hardik Yadav is a full-stack developer and software engineer who builds web applications, APIs, AI-powered products and digital experiences. He works across frontend, backend, databases, deployment and UI/UX."
+    question: "Who is Hardik Yadav and what is Hardik coding?",
+    answer: "Hardik Yadav is a full-stack developer and software engineer who builds web applications, APIs, AI-powered products and digital experiences. 'Hardik coding' represents his methodology of writing clean, scalable code across frontend, backend, databases, deployment and UI/UX."
   },
   {
     question: "What does Hardik Yadav do?",
@@ -27,7 +27,7 @@ const faqs = [
     answer: "Hardik's core stack includes React, Next.js, TypeScript, JavaScript, Node.js, Express.js, MongoDB, PostgreSQL, Tailwind CSS, and modern cloud infrastructure including Vercel and AWS. He also works with AI/LLM integrations and developer tooling."
   },
   {
-    question: "Does Hardik build AI applications?",
+    question: "How does Hardik utilize AI in modern software?",
     answer: "Yes. Hardik integrates AI and LLM capabilities into web applications, from intelligent product features and automation to AI-powered workflows. He focuses on doing this without compromising user experience."
   },
   {
@@ -39,12 +39,12 @@ const faqs = [
     answer: "You can explore Hardik's work on the Projects page of this website, which includes real full-stack applications with case studies covering architecture, technology stack, challenges and outcomes."
   },
   {
-    question: "Where does Hardik share coding content?",
-    answer: "Hardik shares technical articles, development insights and project write-ups on the Blog section of this website. You can also find his code on his GitHub profile."
+    question: "What is coding and how do you write instructions for computers?",
+    answer: "Coding is the process of using programming languages to write instructions that a computer can execute. It involves computer science principles and environments to build software. Whether it's languages like Python or HTML CSS, learning coding allows you to build digital solutions."
   },
   {
-    question: "How can I contact Hardik?",
-    answer: "Use the Contact page on this website to send Hardik a message directly. You can also connect through his verified developer profiles listed in the site footer."
+    question: "Is HRDK Developers a software company in Saharanpur and Delhi?",
+    answer: "Yes, HRDK Developers is a leading software company in Saharanpur, UP, providing services across the National Capital Territory of Delhi and beyond. Use the Contact page on this website to connect."
   }
 ];
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Hardik Yadav — Full-Stack Developer & AI Builder | Saharanpur',
+    default: 'Hardik Yadav - AI Builder, Software Company Saharanpur & Delhi',
     template: '%s | Hardik Yadav',
   },
   description:
@@ -103,7 +103,7 @@ export default function RootLayout({
 
   const organizationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': 'LocalBusiness',
     '@id': `${SITE_URL}/#organization`,
     name: 'HRDK Developers',
     url: SITE_URL,
@@ -111,7 +111,18 @@ export default function RootLayout({
     founder: {
       '@id': `${SITE_URL}/#person`
     },
-    description: 'Software company founded by Hardik Yadav, providing web development, UI/UX, and AI solutions.',
+    description: 'Software company in Saharanpur and Delhi NCR founded by Hardik Yadav, providing web development, AI solutions, and digital marketing.',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: '24'
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Saharanpur',
+      addressRegion: 'Uttar Pradesh',
+      addressCountry: 'India'
+    },
     sameAs: [
       'https://hardikyadav.vercel.app',
       'https://whoishardik.vercel.app',

@@ -122,8 +122,8 @@ export default function Home() {
 
         <div className="relative z-10 flex flex-col items-start w-full px-6 lg:px-24 xl:px-32">
           <h1 className="flex flex-col font-semibold tracking-tighter text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.1] mb-6 drop-shadow-xl text-white">
-            <span>Engineering</span>
-            <span className="text-zinc-300">Digital Excellence.</span>
+            <span>Hardik Yadav:</span>
+            <span className="text-zinc-300 text-5xl md:text-6xl lg:text-[4rem] mt-2">AI Builder & Software Company in Saharanpur</span>
           </h1>
           <p className="text-zinc-300 font-light text-lg md:text-xl max-w-2xl mb-10 drop-shadow-lg">
             I am Hardik Yadav—a Full-Stack Developer, AI Builder, and UX Designer.<br className="hidden md:block"/>
@@ -178,6 +178,33 @@ export default function Home() {
           <p className="text-zinc-400 max-w-xl mx-auto">An interactive demonstration of full-stack expertise.</p>
         </div>
         <TypingDemo />
+      </section>
+
+      {/* SEO Content Expansion Section */}
+      <section className="w-full py-20 px-6 lg:px-24 xl:px-32 bg-[#050505] text-white relative z-10 border-t border-white/10">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+          
+          <div>
+            <h2 className="text-3xl font-bold mb-6 text-white tracking-tight">What is Coding?</h2>
+            <p className="text-zinc-400 text-lg leading-relaxed mb-4">
+              At its core, understanding <strong>what is coding</strong> means learning how to write instructions that a computer can execute. It involves mastering various <strong>programming languages</strong> and the fundamentals of <strong>computer science</strong> to solve real-world problems.
+            </p>
+            <p className="text-zinc-400 text-lg leading-relaxed">
+              Whether it's using <strong>languages like Python</strong> for AI, or <strong>HTML CSS</strong> and JavaScript for web development, learning to code within a modern <strong>development environment</strong> is the first step toward building the future of software.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-3xl font-bold mb-6 text-white tracking-tight">Software Company Serving Saharanpur & Delhi NCR</h2>
+            <p className="text-zinc-400 text-lg leading-relaxed mb-4">
+              HRDK Developers is a premier <strong>software company in Saharanpur</strong>, proudly serving clients across Uttar Pradesh and the <strong>National Capital Territory</strong>. 
+            </p>
+            <p className="text-zinc-400 text-lg leading-relaxed">
+              From the quiet corners of UP to the bustling tech hubs near <strong>Delhi Metro</strong> and <strong>India Gate</strong>, we provide world-class web development, AI integration, and digital marketing solutions tailored to elevate your business.
+            </p>
+          </div>
+
+        </div>
       </section>
 
       {/* About Me Section (Story Scroll) */}
