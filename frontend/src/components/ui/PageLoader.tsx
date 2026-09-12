@@ -8,21 +8,38 @@ import { AnimatePresence, motion } from "framer-motion";
 export const PageLoader = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [isLoading, setIsLoading] = useState(false); // Default to false so no loader on first visit
+  const [isLoading, setIsLoading] = useState(true); // Default to true for initial load
   const isFirstMount = React.useRef(true);
 
   useEffect(() => {
+    let timer: NodeJS.Timeout;
+
+    const hideLoader = () => {
+      setIsLoading(false);
+    };
+
     if (isFirstMount.current) {
       isFirstMount.current = false;
-      return;
+      
+      if (pathname === '/') {
+        // On first mount on home page, wait for the hero video to tell us it's ready
+        window.addEventListener('hide-loader', hideLoader);
+        // Fallback in case the event never fires
+        timer = setTimeout(hideLoader, 8000); 
+      } else {
+        // If landing on any other page, hide it immediately
+        hideLoader();
+      }
+    } else {
+      // On route change, show loader for a fixed time
+      setIsLoading(true);
+      timer = setTimeout(hideLoader, 1500);
     }
 
-    setIsLoading(true);
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1500);
-
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('hide-loader', hideLoader);
+    };
   }, [pathname, searchParams]);
 
   return (

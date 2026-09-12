@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import LogoLoop from "@/components/ui/LogoLoop";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiPython, SiNodedotjs, SiFigma, SiGooglecloud, SiFirebase } from "react-icons/si";
@@ -17,6 +17,14 @@ import { TypingDemo } from "@/components/ui/TypingDemo";
 const premiumFont = Outfit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
 export default function Home() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Failsafe: If the video is already cached and loaded before events fire
+    if (videoRef.current && videoRef.current.readyState >= 3) {
+      window.dispatchEvent(new Event('hide-loader'));
+    }
+  }, []);
 
   const techLogos = [
     { node: <SiReact className="text-zinc-500 hover:text-[#61DAFB] transition-colors text-3xl" />, title: "React" },
@@ -36,6 +44,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-[100svh] min-h-[600px] flex flex-col items-center justify-center overflow-hidden">
         <video 
+          ref={videoRef}
           className="absolute inset-0 z-0 w-full h-full object-cover pointer-events-none opacity-40" 
           autoPlay 
           muted 
@@ -46,6 +55,10 @@ export default function Home() {
           preload="auto"
           poster="/og-image.png"
           style={{ backgroundColor: '#050505' }}
+          onCanPlay={() => window.dispatchEvent(new Event('hide-loader'))}
+          onCanPlayThrough={() => window.dispatchEvent(new Event('hide-loader'))}
+          onLoadedData={() => window.dispatchEvent(new Event('hide-loader'))}
+          onError={() => window.dispatchEvent(new Event('hide-loader'))}
         >
           <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260808_064556_051587f1-74a1-4336-8c05-4dde3594ed05.mp4" type="video/mp4" />
         </video>
