@@ -14,6 +14,7 @@ import {
 } from "lucide-react"
 import { motion, useScroll, useTransform, useInView } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function AboutUsSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -173,8 +174,8 @@ export default function AboutUsSection() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
               >
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center text-white text-3xl font-black mb-4 shadow-lg">
-                  HY
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center text-white text-3xl font-black mb-4 shadow-lg overflow-hidden border-2 border-orange-500/30">
+                  <Image src="/hardik-about.jpg" alt="Hardik Yadav" width={80} height={80} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-1">Hardik Yadav</h3>
                 <p className="text-orange-400 text-xs uppercase tracking-widest font-semibold mb-4">
