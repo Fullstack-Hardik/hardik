@@ -17,14 +17,14 @@ const Skiper28 = () => {
     target: targetRef,
   });
 
-  const yMotionValue = useTransform(scrollYProgress, [0, 1], [1000, -7000]);
-  const transform = useMotionTemplate`rotateX(25deg) translateY(${yMotionValue}px) translateZ(10px)`;
+  const yMotionValue = useTransform(scrollYProgress, [0, 1], [400, -5000]);
+  const transform = useMotionTemplate`rotateX(15deg) translateY(${yMotionValue}px) translateZ(10px)`;
 
   return (
     <>
       <div
         ref={targetRef}
-        className="relative z-0 h-[800vh] w-screen bg-[#050505] text-white"
+        className="relative z-0 h-[400vh] w-screen bg-[#050505] text-white overflow-hidden"
       >
         <div className="absolute left-1/2 top-[10%] grid -translate-x-1/2 content-start justify-items-center gap-6 text-center text-white">
           <span className="relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-white after:to-black after:content-['']">
@@ -35,7 +35,7 @@ const Skiper28 = () => {
           className="sticky top-0 mx-auto flex items-center justify-center bg-transparent py-20"
           style={{
             transformStyle: "preserve-3d",
-            perspective: "400px",
+            perspective: "800px",
           }}
         >
           <motion.div
@@ -44,7 +44,7 @@ const Skiper28 = () => {
               transform,
               textShadow: "0px 10px 20px rgba(255, 88, 0, 0.4)",
             }}
-            className={`${amitaFont.className} w-full max-w-5xl text-center text-4xl md:text-6xl font-extrabold tracking-tighter text-[#ff5800] leading-normal whitespace-pre-wrap`}
+            className={`${amitaFont.className} w-full max-w-7xl text-center text-4xl md:text-6xl font-extrabold tracking-wide text-[#ff5800] leading-normal whitespace-pre-wrap`}
           >
             {`कार घूमरी से काली
 गार्ड खड़े सरकारी
