@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
@@ -57,14 +57,15 @@ export function HorizontalFeatureReveal() {
   const { scrollYProgress } = useScroll({ target: targetRef });
 
   // 5 items, we need to scroll exactly 4 viewport widths to reach the end (-80% of the 500vw width)
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const xTransform = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useSpring(xTransform, { stiffness: 400, damping: 90 });
 
   return (
     <section ref={targetRef} className="relative h-[300vh] md:h-[500vh] bg-black text-white" id="services">
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <div className="absolute top-24 left-6 md:top-20 md:left-20 z-10">
           <h1 className="text-2xl md:text-4xl font-bold tracking-tighter uppercase">Our Services</h1>
-          <div className="h-1 w-20 bg-[#ff5800] mt-2" />
+          <div className="h-1 w-20 bg-[#ff5800] mt-4" />
         </div>
         <motion.div style={{ x }} className="flex w-[500vw]">
           {FEATURES.map((feature, i) => (
