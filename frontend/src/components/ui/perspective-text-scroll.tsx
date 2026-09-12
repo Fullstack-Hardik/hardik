@@ -17,14 +17,14 @@ const Skiper28 = () => {
     target: targetRef,
   });
 
-  const yMotionValue = useTransform(scrollYProgress, [0, 1], [600, -1000]);
+  const yMotionValue = useTransform(scrollYProgress, [0, 1], [1000, -7000]);
   const transform = useMotionTemplate`rotateX(25deg) translateY(${yMotionValue}px) translateZ(10px)`;
 
   return (
     <>
       <div
         ref={targetRef}
-        className="relative z-0 h-[200vh] w-screen bg-[#050505] text-white"
+        className="relative z-0 h-[800vh] w-screen bg-[#050505] text-white"
       >
         <div className="absolute left-1/2 top-[10%] grid -translate-x-1/2 content-start justify-items-center gap-6 text-center text-white">
           <span className="relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-white after:to-black after:content-['']">

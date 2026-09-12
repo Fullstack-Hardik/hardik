@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     'Node.js Developer',
     'Machine Learning',
     'UI/UX Designer',
+    'Deployment Solutions',
   ],
   authors: [{ name: 'Hardik Yadav', url: SITE_URL }],
   creator: 'Hardik Yadav',
