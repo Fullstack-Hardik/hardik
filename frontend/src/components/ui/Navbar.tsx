@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import SpecularButton from "@/components/ui/SpecularButton";
 
 export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,7 +52,28 @@ export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
             <a href="https://www.linkedin.com/in/hardik-yadav-682016301/" target="_blank" className="hover:text-white transition-colors" aria-label="LinkedIn"><FaLinkedin className="w-5 h-5" /></a>
           </div>
 
-          <button className="px-6 py-2.5 rounded-lg bg-white text-black font-semibold shadow-lg hover:bg-zinc-200 transition-colors">Contact Me</button>
+          <SpecularButton
+            size="md"
+            radius={8}
+            tint="#ffffff"
+            tintOpacity={0}
+            blur={0}
+            textColor="#000000"
+            lineColor="#000000"
+            baseColor="#525252"
+            intensity={1}
+            shineSize={10}
+            shineFade={40}
+            thickness={1}
+            speed={0.35}
+            followMouse
+            proximity={250}
+            autoAnimate={false}
+            className="!bg-white"
+            onClick={() => window.location.href = '/contact'}
+          >
+            Contact Me
+          </SpecularButton>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -98,9 +120,28 @@ export default function Navbar({ zIndex = 50 }: { zIndex?: number }) {
             <a href="https://www.linkedin.com/in/hardik-yadav-682016301/" target="_blank" className="hover:text-white transition-colors" aria-label="LinkedIn"><FaLinkedin className="w-6 h-6" /></a>
         </div>
 
-        <button className="mt-auto px-6 py-3 rounded-lg bg-white text-black font-semibold shadow-lg hover:bg-zinc-200 transition-colors w-full">
+        <SpecularButton
+          size="md"
+          radius={8}
+          tint="#ffffff"
+          tintOpacity={0}
+          blur={0}
+          textColor="#000000"
+          lineColor="#000000"
+          baseColor="#525252"
+          intensity={1}
+          shineSize={10}
+          shineFade={40}
+          thickness={1}
+          speed={0.35}
+          followMouse
+          proximity={250}
+          autoAnimate={false}
+          className="mt-auto w-full !bg-white"
+          onClick={() => window.location.href = '/contact'}
+        >
           Contact Me
-        </button>
+        </SpecularButton>
       </div>
     </>
   );
