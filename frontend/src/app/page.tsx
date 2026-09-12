@@ -178,6 +178,7 @@ export default function Home() {
           <p className="text-zinc-400 max-w-xl mx-auto">An interactive demonstration of full-stack expertise.</p>
         </div>
         <TypingDemo />
+      </section>
       {/* About Me Section (Story Scroll) */}
       <FlowArt aria-label="About Me Section">
         <FlowSection aria-label="About Me" style={{ backgroundColor: '#18181b', color: '#fff' }}>
