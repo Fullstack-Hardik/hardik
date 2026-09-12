@@ -102,7 +102,7 @@ export default function FAQsPage() {
         Removed overflow-hidden and fixed height from main wrapper 
         to allow native window scrolling for touchpads and mobile devices.
       */}
-      <main className="w-full bg-[#050505] selection:bg-[#ff5800] selection:text-white overflow-x-clip">
+      <main className="w-full bg-[#050505] selection:bg-[#ff5800] selection:text-white">
         <div 
           tabIndex={0} 
           role="region" 
@@ -153,7 +153,7 @@ export default function FAQsPage() {
             }
           >
             {/* CONTENT INSIDE THE PORTAL */}
-            <div className="w-full max-w-5xl mx-auto px-6 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col items-center min-h-screen relative z-10 pointer-events-auto">
+            <div className="w-full max-w-5xl mx-auto px-6 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col items-center min-h-screen relative z-10 pointer-events-auto overflow-x-hidden">
               <div className="w-full flex justify-center mb-20">
                 <FaqSection data={faqData} />
               </div>
