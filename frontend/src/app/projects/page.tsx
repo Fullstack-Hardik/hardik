@@ -9,12 +9,30 @@ import Navbar from "@/components/ui/Navbar";
 
 const projects = [
   {
+    title1: "Olive Health",
+    title2: "Care Clinic",
+    description: "Trusted homeopathic & holistic care clinic in Pune led by Dr. Nisha Solomon, providing gentle, evidence-based treatments.",
+    imageSrc: "/proj_olive.png",
+    linkTo: "https://www.olivehealthcareclinic.com/",
+    index: "01",
+    label: "Healthcare"
+  },
+  {
+    title1: "Divine Wheel",
+    title2: "Of Fortune",
+    description: "A platform for spiritual guidance offering private readings, energy sessions and sacred goods with Natassha Sharrma.",
+    imageSrc: "/proj_divine.png",
+    linkTo: "https://divinewheeloffortune.com/",
+    index: "02",
+    label: "Spiritual"
+  },
+  {
     title1: "HRDKPen",
     title2: "Code IDE",
     description: "A fully functional AI web IDE for coding and learning, featuring CodeMirror, virtual terminal, and an AI chat agent for assistance.",
     imageSrc: "/proj_ide_hrdkpen.png",
     linkTo: "https://hrdkpen-code.vercel.app",
-    index: "01",
+    index: "03",
     label: "Web IDE"
   },
   {
@@ -23,7 +41,7 @@ const projects = [
     description: "A fast and intuitive CRM dashboard with task management, messaging, employee and manager panels, activity logs, screen sharing, and full secure authentication.",
     imageSrc: "/proj_crm_vertex.png",
     linkTo: "https://vertexcrm.vercel.app/",
-    index: "02",
+    index: "04",
     label: "Management"
   },
   {
@@ -32,7 +50,7 @@ const projects = [
     description: "A comprehensive event and HR management dashboard with real-time analytics and employee tracking.",
     imageSrc: "/proj_event.png",
     linkTo: "https://github.com/fullstack-hardik",
-    index: "03",
+    index: "05",
     label: "HR & Events"
   },
   {
@@ -41,7 +59,7 @@ const projects = [
     description: "A centralized task management and team collaboration hub with kanban boards and workflow automation.",
     imageSrc: "/proj_task.png",
     linkTo: "https://github.com/fullstack-hardik",
-    index: "04",
+    index: "06",
     label: "Productivity"
   },
   {
@@ -50,7 +68,7 @@ const projects = [
     description: "A modern tech blog and news portal featuring seamless reading experiences and content discovery.",
     imageSrc: "/proj_blog.png",
     linkTo: "https://github.com/fullstack-hardik",
-    index: "05",
+    index: "07",
     label: "Publishing"
   },
   {
@@ -59,7 +77,7 @@ const projects = [
     description: "An immersive virtual tour agency platform showcasing 3D spatial mapping and interactive property views.",
     imageSrc: "/proj_tour.png",
     linkTo: "https://github.com/fullstack-hardik",
-    index: "06",
+    index: "08",
     label: "Virtual Reality"
   },
   {
@@ -68,7 +86,7 @@ const projects = [
     description: "A sophisticated corporate portfolio and trading platform with real-time market integrations.",
     imageSrc: "/proj_business.png",
     linkTo: "https://github.com/fullstack-hardik",
-    index: "07",
+    index: "09",
     label: "Finance"
   },
   {
@@ -77,7 +95,7 @@ const projects = [
     description: "A luxurious e-commerce storefront for premium jewelry with seamless checkout and product visualization.",
     imageSrc: "/proj_jewelry.png",
     linkTo: "https://github.com/fullstack-hardik",
-    index: "08",
+    index: "10",
     label: "E-Commerce"
   }
 ];
