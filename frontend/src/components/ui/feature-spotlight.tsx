@@ -15,6 +15,8 @@ export interface FeatureSpotlightProps {
   imageSrc: string;
   label?: string;
   isReversed?: boolean;
+  technologies?: string[];
+  working?: string;
 }
 
 export function FeaturedSpotlight({
@@ -25,7 +27,9 @@ export function FeaturedSpotlight({
   linkTo,
   imageSrc,
   label = "Featured",
-  isReversed = false
+  isReversed = false,
+  technologies,
+  working
 }: FeatureSpotlightProps) {
   const [isHovered, setIsHovered] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -113,20 +117,50 @@ export function FeaturedSpotlight({
           {description}
         </p>
 
-        {/* Action Button */}
-        <div
-          className="mt-10 flex items-center gap-4 transition-all duration-700 md:mt-14"
-          style={{
-            transform: isHovered ? "translateX(12px)" : "translateX(0)",
-          }}
-        >
-          <div className="flex h-14 w-14 items-center justify-center rounded-full border border-border transition-colors duration-500 group-hover:border-[#ff5800] group-hover:bg-[#ff5800] group-hover:text-black">
-            <ArrowUpRight className="h-6 w-6 transition-transform duration-500 group-hover:rotate-45" />
+        {working && (
+          <p
+            className="mt-4 text-sm leading-relaxed text-muted-foreground/80 transition-all duration-700"
+            style={{
+              opacity: isHovered ? 1 : 0.7,
+              transform: isHovered ? "translateY(0)" : "translateY(6px)",
+            }}
+          >
+            <strong>How it works:</strong> {working}
+          </p>
+        )}
+
+        {technologies && technologies.length > 0 && (
+          <div
+            className="mt-6 flex flex-wrap gap-2 transition-all duration-700"
+            style={{
+              opacity: isHovered ? 1 : 0.7,
+              transform: isHovered ? "translateY(0)" : "translateY(6px)",
+            }}
+          >
+            {technologies.map((tech, i) => (
+              <span key={i} className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">
+                {tech}
+              </span>
+            ))}
           </div>
-          <span className="text-sm font-bold tracking-widest text-foreground uppercase group-hover:text-[#ff5800] transition-colors duration-500">
-            Explore Project
-          </span>
-        </div>
+        )}
+
+        {/* Action Button */}
+        <Link href={linkTo} target="_blank" rel="noopener noreferrer">
+          <div
+            className="mt-10 flex items-center gap-4 transition-all duration-700 md:mt-14 group/btn cursor-pointer"
+            style={{
+              transform: isHovered ? "translateX(12px)" : "translateX(0)",
+            }}
+          >
+            <div className="flex h-14 w-14 items-center justify-center rounded-full border border-border transition-colors duration-500 group-hover/btn:border-[#ff5800] group-hover/btn:bg-[#ff5800] group-hover/btn:text-black">
+              <ArrowUpRight className="h-6 w-6 transition-transform duration-500 group-hover/btn:rotate-45" />
+            </div>
+            <span className="text-sm font-bold tracking-widest text-foreground uppercase group-hover/btn:text-[#ff5800] transition-colors duration-500">
+              Explore Project
+            </span>
+          </div>
+        </Link>
       </motion.div>
 
       {/* Right: Image Block */}

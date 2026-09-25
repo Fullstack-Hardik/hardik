@@ -15,7 +15,9 @@ const projects = [
     imageSrc: "/proj_olive.png",
     linkTo: "https://www.olivehealthcareclinic.com/",
     index: "01",
-    label: "Healthcare"
+    label: "Healthcare",
+    technologies: ["React", "Next.js", "Tailwind CSS"],
+    working: "Appointments can be booked through direct WhatsApp integration, while the site showcases detailed specialty services and health articles."
   },
   {
     title1: "Divine Wheel",
@@ -24,7 +26,9 @@ const projects = [
     imageSrc: "/proj_divine.png",
     linkTo: "https://divinewheeloffortune.com/",
     index: "02",
-    label: "Spiritual"
+    label: "Spiritual",
+    technologies: ["React", "Vite", "Framer Motion"],
+    working: "Users can browse spiritual services, book private readings, and shop for sacred goods via integrated e-commerce features."
   },
   {
     title1: "HRDKPen",
@@ -33,7 +37,9 @@ const projects = [
     imageSrc: "/proj_ide_hrdkpen.png",
     linkTo: "https://hrdkpen-code.vercel.app",
     index: "03",
-    label: "Web IDE"
+    label: "Web IDE",
+    technologies: ["React", "CodeMirror", "Node.js", "Socket.io"],
+    working: "Provides real-time code compilation and execution using a virtual terminal, with live AI chat integration."
   },
   {
     title1: "Vertex",
@@ -42,7 +48,9 @@ const projects = [
     imageSrc: "/proj_crm_vertex.png",
     linkTo: "https://vertexcrm.vercel.app/",
     index: "04",
-    label: "Management"
+    label: "Management",
+    technologies: ["Next.js", "Prisma", "PostgreSQL"],
+    working: "An employee management system featuring live messaging, task assignment, and activity tracking dashboards."
   },
   {
     title1: "Vertexiae",
@@ -51,7 +59,9 @@ const projects = [
     imageSrc: "/proj_event.png",
     linkTo: "https://github.com/fullstack-hardik",
     index: "05",
-    label: "HR & Events"
+    label: "HR & Events",
+    technologies: ["Next.js", "Firebase", "Stripe"],
+    working: "Facilitates end-to-end event management, ticket booking, and real-time HR analytics."
   },
   {
     title1: "Earnetix",
@@ -60,7 +70,9 @@ const projects = [
     imageSrc: "/proj_task.png",
     linkTo: "https://github.com/fullstack-hardik",
     index: "06",
-    label: "Productivity"
+    label: "Productivity",
+    technologies: ["React", "Redux", "Express", "MongoDB"],
+    working: "Enables task organization via drag-and-drop Kanban boards and custom workflow automation rules."
   },
   {
     title1: "Earnetix",
@@ -69,7 +81,9 @@ const projects = [
     imageSrc: "/proj_blog.png",
     linkTo: "https://github.com/fullstack-hardik",
     index: "07",
-    label: "Publishing"
+    label: "Publishing",
+    technologies: ["Next.js", "Contentful CMS", "GraphQL"],
+    working: "A scalable publishing platform that delivers technical articles and news seamlessly with static site generation."
   },
   {
     title1: "Garry",
@@ -78,7 +92,9 @@ const projects = [
     imageSrc: "/proj_tour.png",
     linkTo: "https://github.com/fullstack-hardik",
     index: "08",
-    label: "Virtual Reality"
+    label: "Virtual Reality",
+    technologies: ["Three.js", "React", "WebGL"],
+    working: "Provides immersive 3D spatial mapping and interactive property tours directly within the browser."
   },
   {
     title1: "Delta",
@@ -87,7 +103,9 @@ const projects = [
     imageSrc: "/proj_business.png",
     linkTo: "https://github.com/fullstack-hardik",
     index: "09",
-    label: "Finance"
+    label: "Finance",
+    technologies: ["React", "WebSockets", "Chart.js"],
+    working: "Delivers live trading dashboards and real-time market data visualization for corporate portfolios."
   },
   {
     title1: "Ratna",
@@ -96,7 +114,9 @@ const projects = [
     imageSrc: "/proj_jewelry.png",
     linkTo: "https://github.com/fullstack-hardik",
     index: "10",
-    label: "E-Commerce"
+    label: "E-Commerce",
+    technologies: ["Next.js", "Shopify API", "Tailwind"],
+    working: "A premium jewelry e-commerce experience with interactive product visualizers and a seamless checkout flow."
   }
 ];
 
